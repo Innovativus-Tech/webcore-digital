@@ -42,8 +42,8 @@ export default function AboutPage() {
 
         {/* Values */}
         <FeatureGrid
-          eyebrow="How we operate"
-          heading="Six principles behind every engagement"
+          eyebrow="Our values"
+          heading="Seven principles behind every engagement"
           items={aboutPage.values}
           cols={3}
         />

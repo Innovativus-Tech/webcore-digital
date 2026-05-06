@@ -62,49 +62,73 @@ export const servicesPage = {
   categories: [
     {
       icon: "Search",
-      title: "Digital Marketing",
+      title: "Digital Marketing Services",
       summary:
-        "Integrated strategies across SEO, PPC, email, and social, built around your customer acquisition goals.",
+        "Integrated strategies across SEO, PPC, email, social, content, ORM, video, and CRO — all tailored to your customer acquisition goals.",
       href: "/digital-marketing-services",
       tags: ["SEO", "PPC", "Email", "Social"],
     },
     {
-      icon: "MonitorSmartphone",
-      title: "Web Design & Development",
+      icon: "Target",
+      title: "Pay Per Click Marketing",
       summary:
-        "Professional, conversion-focused websites that elevate your online presence and turn visitors into customers.",
-      href: "/web-design-services",
-      tags: ["UI/UX Design", "CRO", "Dev"],
+        "Profitable PPC campaigns across Search, Display, Social, Remarketing, Google Shopping, YouTube, Gmail, Local Services, and Amazon Ads.",
+      href: "/pay-per-click-marketing-service",
+      tags: ["Google Ads", "Amazon PPC", "Social Ads"],
     },
     {
-      icon: "PenLine",
-      title: "SEO Content Writing",
+      icon: "MessageCircle",
+      title: "Social Media Marketing",
       summary:
-        "Research-driven, plagiarism-free content that ranks, educates, and supports your brand messaging.",
-      href: "/seo-content-writing-services",
-      tags: ["Blog", "Landing Pages", "Copywriting"],
+        "Build brand awareness and drive revenue across Facebook, Instagram, Twitter, LinkedIn, YouTube, Pinterest, and Snapchat.",
+      href: "/social-media-marketing-service",
+      tags: ["Facebook", "Instagram", "LinkedIn"],
     },
     {
       icon: "BarChart3",
       title: "Search Engine Optimization",
       summary:
-        "Technical SEO, on-page optimisation, and link building, including multi-location and franchise SEO.",
+        "Technical SEO, on-page optimisation, link building, local SEO, Amazon SEO, Shopify SEO, and franchise SEO.",
       href: "/search-engine-optimization-seo-service",
       tags: ["Technical SEO", "Local SEO", "Link Building"],
     },
     {
-      icon: "Palette",
-      title: "Graphic Design",
+      icon: "PenLine",
+      title: "SEO Content Writing",
       summary:
-        "Creative, intuitive design work that elevates your brand identity and supports every marketing channel.",
+        "Research-driven, plagiarism-free content that ranks, educates, and converts — from blog posts to landing page copy.",
+      href: "/seo-content-writing-services",
+      tags: ["Blog", "Landing Pages", "Copywriting"],
+    },
+    {
+      icon: "MonitorSmartphone",
+      title: "Web Design & Development",
+      summary:
+        "Custom corporate, eCommerce, and mobile-responsive websites built to convert visitors into customers.",
+      href: "/web-design-services",
+      tags: ["UI/UX Design", "CRO", "eCommerce"],
+    },
+    {
+      icon: "Palette",
+      title: "Graphic Designing Services",
+      summary:
+        "Logos, branding, social media graphics, motion graphics, marketing materials, and presentations — all 100% custom.",
       href: "/graphic-designing-services",
-      tags: ["Branding", "Creatives", "Logos"],
+      tags: ["Branding", "Logo Design", "Motion Graphics"],
+    },
+    {
+      icon: "ShoppingCart",
+      title: "E-commerce Marketing",
+      summary:
+        "Multi-channel e-commerce marketing — SEO, PPC, email, content, CRO, and link building to grow your online store's revenue.",
+      href: "/ecommerce-marketing-agency",
+      tags: ["eCommerce SEO", "PPC", "CRO"],
     },
     {
       icon: "MapPin",
       title: "Chicago Digital Marketing",
       summary:
-        "Location-specific campaigns built for Chicago businesses: HARO, local SEO, and targeted brand awareness.",
+        "Location-specific campaigns for Chicago businesses: local SEO, HARO link building, geo-targeted PPC, and local content.",
       href: "/chicago-digital-marketing-agency",
       tags: ["Local SEO", "HARO", "Chicago"],
     },
