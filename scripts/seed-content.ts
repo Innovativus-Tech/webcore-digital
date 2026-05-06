@@ -2,7 +2,8 @@
  * Seeds the PageContent table with all page content from the site.
  * Run:  npx tsx scripts/seed-content.ts
  */
-import "dotenv/config";
+import { config } from "dotenv";
+config({ path: ".env.local" });
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();

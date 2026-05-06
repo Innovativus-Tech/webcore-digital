@@ -6,7 +6,8 @@
  *       (DATABASE_URL, OPENAI_API_KEY, PINECONE_API_KEY, PINECONE_INDEX must be set)
  */
 
-import "dotenv/config";
+import { config } from "dotenv";
+config({ path: ".env.local" });
 import { PrismaClient } from "@prisma/client";
 import { Pinecone } from "@pinecone-database/pinecone";
 import OpenAI from "openai";
