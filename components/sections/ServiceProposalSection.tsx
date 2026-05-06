@@ -110,14 +110,24 @@ interface Props {
   paragraphs: string[];
   /** Service name sent with the lead (e.g. "SEO Service") */
   service: string;
+  /** Optional heading above the paragraphs */
+  heading?: string;
 }
 
-export function ServiceProposalSection({ paragraphs, service }: Props) {
+export function ServiceProposalSection({ paragraphs, service, heading }: Props) {
   return (
     <section className="container-x py-20 md:py-24">
       <div className="grid gap-14 lg:grid-cols-12">
         {/* Left — overview text */}
         <div className="lg:col-span-7 space-y-5">
+          {heading && (
+            <motion.h2
+              className="text-2xl font-semibold text-brand-900 md:text-3xl"
+              {...fadeUp(0)}
+            >
+              {heading}
+            </motion.h2>
+          )}
           {paragraphs.map((p, i) => (
             <motion.p
               key={i}

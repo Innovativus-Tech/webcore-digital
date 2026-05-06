@@ -13,18 +13,38 @@ export const aboutPage = {
       "Learn about WebcoreDigital, a leading digital marketing agency delivering top-notch services to businesses across industries.",
   },
   hero: {
-    eyebrow: "Who we are",
+    eyebrow: "About Us",
     title: "Your results-driven digital marketing partner",
     subtitle:
       "WebcoreDigital is a leading digital marketing agency delivering top-notch digital marketing services to businesses across various industries. We combine strategy, technology, and creativity to grow brands that matter.",
-    cta: { label: "Work with us", href: "/contact" },
+    cta: { label: "Get My Free Proposal", href: "/contact" },
   },
-  story: {
-    heading: "Built around your goals",
+  welcome: {
+    heading: "Welcome to Webcore Digital",
     paragraphs: [
-      "WebcoreDigital was founded on a simple belief: digital marketing should be measured by business outcomes, not vanity metrics. We are a team of strategists, writers, analysts, and designers who work as an extension of your team.",
-      "Every engagement starts with research into your market, your competitors, and your customers. That foundation lets us build campaigns that generate real leads, real traffic, and real revenue for businesses of all sizes.",
-      "From startups finding their footing to established brands looking to scale, we adapt our approach to what your specific stage and goals demand. No cookie-cutter packages. No bloated retainers. Just focused, measurable digital marketing.",
+      "Webcore Digital is a leading digital marketing agency that delivers top-notch digital marketing services to businesses across various industries.",
+      "We offer a comprehensive suite of services that includes search engine optimization, pay-per-click advertising, social media marketing, email marketing, content marketing, web design and development.",
+      "Our client-centric approach ensures that every campaign is tailored to meet the unique needs of each client, with a focus on achieving measurable results that drive growth and increase ROI.",
+      "The team at Webcore Digital is dedicated to staying ahead of the curve and adapting to the ever-changing digital landscape. They leverage the latest technologies and best practices to deliver cutting-edge solutions that help clients stay ahead of their competition.",
+      "Whether you are a small business looking to establish a strong online presence or a large corporation seeking to expand your digital marketing efforts, Webcore Digital has the expertise and resources to help you achieve your goals.",
+    ],
+  },
+  agencyBand: {
+    eyebrow: "Webcore Digital Agency",
+    heading: "#1 Digital Marketing Agency",
+    tagline:
+      "We let our accessible and user-friendly services speak for us. Avail our services and experience the incredible digital journey.",
+  },
+  valuesIntro:
+    "We follow certain principles like, understanding the needs of the customer and what technology it resolves. Our team help in maximising business value, consistent performance and sustainability. We empower our clients to respond faster according to the needs of the market and provide the best work at less cost.",
+  growth: {
+    heading: "Looking for Professional Growth?",
+    paragraphs: [
+      "By leveraging the expertise and resources provided by Webcore Digital, businesses can achieve remarkable results in their digital marketing efforts.",
+      "Through strategic search engine optimization (SEO), Webcore Digital helps businesses improve their online visibility, driving organic traffic to their websites. This increased visibility enhances brand recognition and attracts potential customers, ultimately leading to business growth.",
+      "Webcore Digital excels in crafting compelling and engaging content marketing strategies. By creating high-quality content to target audiences, businesses can establish thought leadership, build trust, and engage with their customer base effectively.",
+      "Webcore Digital offers data-driven digital advertising services, such as pay-per-click (PPC) campaigns and display advertising, ensuring businesses reach their target audience with precision and maximize their return on investment.",
+      "By partnering with Webcore Digital, businesses can tap into their industry-leading digital marketing services, leveraging their expertise to drive business growth, increase brand visibility, and achieve long-term success in the digital landscape.",
     ],
   },
   values: [
