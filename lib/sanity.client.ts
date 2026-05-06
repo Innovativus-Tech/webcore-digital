@@ -14,46 +14,54 @@ const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production";
 const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION ?? "2024-01-01";
 
-if (!projectId) {
-  throw new Error(
-    "Missing NEXT_PUBLIC_SANITY_PROJECT_ID environment variable.\n" +
-      "Add it to .env.local — see .env.example for the full list of required vars."
-  );
-}
+/**
+ * Returns true when the Sanity project ID is configured.
+ * Used by pages to decide whether to fetch from Sanity or fall back to static data.
+ */
+export const isSanityConfigured = Boolean(projectId);
 
 /**
  * Primary server-side client with read token.
  * useCdn: true in production for fast cached responses.
  * useCdn: false required when token is set (CDN doesn't support auth).
+ *
+ * Returns null if Sanity is not configured (projectId missing).
  */
-export const sanityClient = createClient({
-  projectId,
-  dataset,
-  apiVersion,
-  // CDN is disabled when a token is present; Sanity requires this.
-  useCdn: process.env.SANITY_API_READ_TOKEN ? false : process.env.NODE_ENV === "production",
-  token: process.env.SANITY_API_READ_TOKEN,
-  // Ensures we always get published content (not drafts) unless in preview
-  perspective: "published",
-});
+export const sanityClient = projectId
+  ? createClient({
+      projectId,
+      dataset,
+      apiVersion,
+      // CDN is disabled when a token is present; Sanity requires this.
+      useCdn: process.env.SANITY_API_READ_TOKEN
+        ? false
+        : process.env.NODE_ENV === "production",
+      token: process.env.SANITY_API_READ_TOKEN,
+      // Ensures we always get published content (not drafts) unless in preview
+      perspective: "published",
+    })
+  : null;
 
 /**
  * Token-less browser-safe client for public reads without auth.
  * Used by the embedded Studio and any client component that needs
  * a client reference (e.g. SanityLive, useClient).
  */
-export const publicSanityClient = createClient({
-  projectId,
-  dataset,
-  apiVersion,
-  useCdn: process.env.NODE_ENV === "production",
-});
+export const publicSanityClient = projectId
+  ? createClient({
+      projectId,
+      dataset,
+      apiVersion,
+      useCdn: process.env.NODE_ENV === "production",
+    })
+  : null;
 
 /**
  * Generic typed fetch helper that wraps sanityClient.fetch with:
  *  - Next.js `revalidate` for ISR
  *  - Optional cache tags for on-demand revalidation
  *  - TypeScript generic for the return value
+ *  - Returns null gracefully when Sanity is not configured
  *
  * Usage:
  *   const page = await sanityFetch<SanityPage>({
@@ -74,7 +82,12 @@ export async function sanityFetch<T>({
   revalidate?: number | false;
   /** Cache tags for on-demand revalidation via Route Handlers. */
   tags?: string[];
-}): Promise<T> {
+}): Promise<T | null> {
+  if (!sanityClient) {
+    // Sanity not configured — return null so callers can fall back to static data
+    return null;
+  }
+
   return sanityClient.fetch<T>(query, params, {
     next: {
       revalidate,

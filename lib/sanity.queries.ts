@@ -241,7 +241,7 @@ const ALL_PAGES_FOR_RAG_QUERY = `
 // ─────────────────────────────────────────────────────────────────────────────
 
 export async function getPageBySlug(slug: string): Promise<SanityPage | null> {
-  return sanityFetch<SanityPage | null>({
+  return sanityFetch<SanityPage>({
     query: PAGE_BY_SLUG_QUERY,
     params: { slug },
     tags: ["page"],
@@ -250,32 +250,35 @@ export async function getPageBySlug(slug: string): Promise<SanityPage | null> {
 }
 
 export async function getAllPageSlugs(): Promise<SanityPageStub[]> {
-  return sanityFetch<SanityPageStub[]>({
+  const result = await sanityFetch<SanityPageStub[]>({
     query: ALL_PAGE_SLUGS_QUERY,
     tags: ["page"],
     // Slugs rarely change — longer cache is fine
     revalidate: 3600,
   });
+  return result ?? [];
 }
 
 export async function getAllServicePages(): Promise<SanityPageStub[]> {
-  return sanityFetch<SanityPageStub[]>({
+  const result = await sanityFetch<SanityPageStub[]>({
     query: ALL_SERVICE_PAGES_QUERY,
     tags: ["page"],
     revalidate: 3600,
   });
+  return result ?? [];
 }
 
 export async function getAllLocationPages(): Promise<SanityPageStub[]> {
-  return sanityFetch<SanityPageStub[]>({
+  const result = await sanityFetch<SanityPageStub[]>({
     query: ALL_LOCATION_PAGES_QUERY,
     tags: ["page"],
     revalidate: 3600,
   });
+  return result ?? [];
 }
 
 export async function getSiteSettings(): Promise<SanitySiteSettings | null> {
-  return sanityFetch<SanitySiteSettings | null>({
+  return sanityFetch<SanitySiteSettings>({
     query: SITE_SETTINGS_QUERY,
     tags: ["siteSettings"],
     // Site settings rarely change — 1hr cache
@@ -288,7 +291,7 @@ export async function getSiteSettings(): Promise<SanitySiteSettings | null> {
  * Returns all pages with full section content for chunking + embedding.
  */
 export async function getAllPagesForRag() {
-  return sanityFetch<
+  const result = await sanityFetch<
     Array<{
       _id: string;
       title: string;
@@ -303,6 +306,7 @@ export async function getAllPagesForRag() {
     // Bypass cache for ingestion jobs — always fresh
     revalidate: false,
   });
+  return result ?? [];
 }
 
 // Re-export raw query strings for use in generateMetadata or other places

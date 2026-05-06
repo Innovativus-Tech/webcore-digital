@@ -13,18 +13,19 @@
     "@ai-sdk/react": "^0.0.70",
     "@pinecone-database/pinecone": "^3.0.3",
     "@prisma/client": "^5.22.0",
-    "@sanity/image-url": "^2.1.1",
-    "@sanity/vision": "^5.24.0",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^3.99.0",
     "ai": "^3.4.33",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^0.451.0",
     "next": "14.2.15",
-    "next-sanity": "^12.4.2",
+    "next-sanity": "^9.12.3",
     "openai": "^4.67.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sanity": "^5.24.0"
+    "sanity": "^3.99.0",
+    "styled-components": "^6.4.1"
   },
   "devDependencies": {
     "@types/node": "^20.16.10",

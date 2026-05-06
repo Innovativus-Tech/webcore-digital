@@ -2,7 +2,7 @@
 import { ArrowRight, Sparkles, TrendingUp, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { hero } from "@/lib/data";
+import { hero as staticHero } from "@/lib/data";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -10,7 +10,23 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.55, ease: "easeOut" as const, delay },
 });
 
-export function Hero() {
+type HeroProps = {
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  primaryCta?: { label: string; href: string };
+  secondaryCta?: { label: string; href: string };
+  badgeItems?: string[];
+};
+
+export function Hero(props: HeroProps = {}) {
+  const eyebrow = props.eyebrow ?? staticHero.eyebrow;
+  const title = props.title ?? staticHero.title;
+  const subtitle = props.subtitle ?? staticHero.subtitle;
+  const primaryCta = props.primaryCta ?? staticHero.primaryCta;
+  const secondaryCta = props.secondaryCta ?? staticHero.secondaryCta;
+  const badgeItems = props.badgeItems ?? ["Free 30-min audit", "No obligation"];
+
   return (
     <section className="relative overflow-hidden">
       {/* soft mesh */}
@@ -22,30 +38,31 @@ export function Hero() {
       <div className="container-x grid items-center gap-12 py-20 lg:grid-cols-12 lg:py-28">
         <div className="lg:col-span-7">
           <motion.span className="eyebrow" {...fadeUp(0)}>
-            <Sparkles className="h-3.5 w-3.5" /> {hero.eyebrow}
+            <Sparkles className="h-3.5 w-3.5" /> {eyebrow}
           </motion.span>
           <motion.h1
             className="mt-5 text-4xl sm:text-5xl lg:text-[64px] lg:leading-[1.05] font-semibold"
             {...fadeUp(0.1)}
           >
-            {hero.title}
+            {title}
           </motion.h1>
           <motion.p className="mt-6 max-w-xl text-lg text-ink-500" {...fadeUp(0.2)}>
-            {hero.subtitle}
+            {subtitle}
           </motion.p>
           <motion.div className="mt-8 flex flex-col sm:flex-row gap-3" {...fadeUp(0.3)}>
-            <Button href={hero.primaryCta.href} size="lg">
-              {hero.primaryCta.label} <ArrowRight className="h-4 w-4" />
+            <Button href={primaryCta.href} size="lg">
+              {primaryCta.label} <ArrowRight className="h-4 w-4" />
             </Button>
-            <Button href={hero.secondaryCta.href} variant="secondary" size="lg">
-              {hero.secondaryCta.label}
+            <Button href={secondaryCta.href} variant="secondary" size="lg">
+              {secondaryCta.label}
             </Button>
           </motion.div>
           <motion.div className="mt-8 flex items-center gap-6 text-sm text-ink-500" {...fadeUp(0.38)}>
-            <span className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-accent-500" /> Free 30-min audit
-            </span>
-            <span>No obligation</span>
+            {badgeItems.map((item, i) => (
+              <span key={i} className="flex items-center gap-2">
+                <span className="h-2 w-2 rounded-full bg-accent-500" />{item}
+              </span>
+            ))}
           </motion.div>
         </div>
 

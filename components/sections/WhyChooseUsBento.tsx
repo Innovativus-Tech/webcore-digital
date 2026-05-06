@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { whyChooseUs } from "@/lib/data";
+import { whyChooseUs as staticItems } from "@/lib/data";
 import { Icon } from "@/components/ui/Icon";
 import { IconSquare } from "@/components/ui/IconSquare";
 import { cn } from "@/lib/cn";
@@ -11,26 +11,45 @@ const sizeClasses: Record<string, string> = {
   lg: "md:col-span-3",
 };
 
-export function WhyChooseUsBento() {
+type WhyItem = {
+  icon: string;
+  title: string;
+  body: string;
+  size: string;
+};
+
+type Props = {
+  eyebrow?: string;
+  heading?: string;
+  subheading?: string;
+  items?: WhyItem[];
+};
+
+export function WhyChooseUsBento(props: Props = {}) {
+  const eyebrow = props.eyebrow ?? "Why choose us";
+  const heading = props.heading ?? "Built for results and the relationships behind them.";
+  const subheading = props.subheading ?? "Six things that shape every engagement. Not slogans; how we operate.";
+  const items = props.items ?? staticItems;
+
   return (
     <section id="why" className="container-x py-20 md:py-28">
       <div className="max-w-2xl">
-        <span className="eyebrow">Why choose us</span>
+        <span className="eyebrow">{eyebrow}</span>
         <h2 className="mt-4 text-3xl md:text-4xl lg:text-[44px] lg:leading-tight">
-          Built for results and the relationships behind them.
+          {heading}
         </h2>
         <p className="mt-4 text-ink-500">
-          Six things that shape every engagement. Not slogans; how we operate.
+          {subheading}
         </p>
       </div>
 
       <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-6">
-        {whyChooseUs.map((item, i) => (
+        {items.map((item, i) => (
           <motion.div
-            key={item.id}
+            key={item.title}
             className={cn(
               "group rounded-card border border-ink-100 bg-white p-7 transition hover:border-brand-500 hover:shadow-card",
-              sizeClasses[item.size],
+              sizeClasses[item.size] ?? "md:col-span-2",
             )}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

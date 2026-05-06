@@ -2,9 +2,23 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { cta } from "@/lib/data";
+import { cta as staticCta } from "@/lib/data";
 
-export function CTABand() {
+type Props = {
+  title?: string;
+  subtitle?: string;
+  primaryCta?: { label: string; href: string };
+  secondaryCta?: { label: string; href: string };
+  reassurance?: string;
+};
+
+export function CTABand(props: Props = {}) {
+  const title = props.title ?? staticCta.title;
+  const subtitle = props.subtitle ?? staticCta.subtitle;
+  const primaryCta = props.primaryCta ?? staticCta.primaryCta;
+  const secondaryCta = props.secondaryCta ?? staticCta.secondaryCta;
+  const reassurance = props.reassurance ?? staticCta.reassurance;
+
   return (
     <section id="contact" className="relative overflow-hidden bg-brand-900 text-white">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-0">
@@ -21,9 +35,9 @@ export function CTABand() {
             viewport={{ once: true }}
             transition={{ duration: 0.55, ease: "easeOut" }}
           >
-            {cta.title.split(" ").slice(0, -2).join(" ")}{" "}
+            {title.split(" ").slice(0, -2).join(" ")}{" "}
             <span className="border-b-4 border-accent-500 pb-1">
-              {cta.title.split(" ").slice(-2).join(" ")}
+              {title.split(" ").slice(-2).join(" ")}
             </span>
           </motion.h2>
           <motion.p
@@ -33,7 +47,7 @@ export function CTABand() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
           >
-            {cta.subtitle}
+            {subtitle}
           </motion.p>
           <motion.div
             className="mt-8 flex flex-col sm:flex-row gap-3"
@@ -42,26 +56,30 @@ export function CTABand() {
             viewport={{ once: true }}
             transition={{ duration: 0.45, ease: "easeOut", delay: 0.2 }}
           >
-            <Button href={cta.primaryCta.href} variant="onDark" size="lg">
-              {cta.primaryCta.label} <ArrowRight className="h-4 w-4" />
+            <Button href={primaryCta.href} variant="onDark" size="lg">
+              {primaryCta.label} <ArrowRight className="h-4 w-4" />
             </Button>
-            <Button
-              href={cta.secondaryCta.href}
-              size="lg"
-              className="bg-transparent text-white border border-white/30 hover:bg-white/10"
-            >
-              {cta.secondaryCta.label}
-            </Button>
+            {secondaryCta && (
+              <Button
+                href={secondaryCta.href}
+                size="lg"
+                className="bg-transparent text-white border border-white/30 hover:bg-white/10"
+              >
+                {secondaryCta.label}
+              </Button>
+            )}
           </motion.div>
-          <motion.p
-            className="mt-6 text-sm text-white/60"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.35 }}
-          >
-            {cta.reassurance}
-          </motion.p>
+          {reassurance && (
+            <motion.p
+              className="mt-6 text-sm text-white/60"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.35 }}
+            >
+              {reassurance}
+            </motion.p>
+          )}
         </div>
       </div>
     </section>

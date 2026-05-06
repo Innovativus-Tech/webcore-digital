@@ -1,25 +1,44 @@
 "use client";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { services } from "@/lib/data";
+import { services as staticServices } from "@/lib/data";
 import { Icon } from "@/components/ui/Icon";
 import { IconSquare } from "@/components/ui/IconSquare";
 
-export function ServicesGrid() {
+type ServiceItem = {
+  icon: string;
+  title: string;
+  summary: string;
+  href?: string;
+};
+
+type Props = {
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  items?: ServiceItem[];
+};
+
+export function ServicesGrid(props: Props = {}) {
+  const eyebrow = props.eyebrow ?? "Services";
+  const title = props.title ?? staticServices.title;
+  const subtitle = props.subtitle ?? staticServices.subtitle;
+  const items = props.items ?? (staticServices.items as ServiceItem[]);
+
   return (
     <section id="services" className="bg-ink-50 border-y border-ink-100">
       <div className="container-x py-20 md:py-28">
         <div className="max-w-2xl">
-          <span className="eyebrow">Services</span>
-          <h2 className="mt-4 text-3xl md:text-4xl lg:text-[44px] lg:leading-tight">{services.title}</h2>
-          <p className="mt-4 text-ink-500">{services.subtitle}</p>
+          <span className="eyebrow">{eyebrow}</span>
+          <h2 className="mt-4 text-3xl md:text-4xl lg:text-[44px] lg:leading-tight">{title}</h2>
+          <p className="mt-4 text-ink-500">{subtitle}</p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {services.items.map((s, i) => (
+          {items.map((s, i) => (
             <motion.a
-              key={s.id}
-              href="#contact"
+              key={s.title}
+              href={s.href ?? "#contact"}
               className="group rounded-card border border-ink-100 bg-white p-6 transition hover:border-brand-500 hover:shadow-cardHover focus-ring"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

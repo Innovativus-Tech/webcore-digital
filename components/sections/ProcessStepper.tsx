@@ -1,8 +1,27 @@
 "use client";
 import { motion } from "framer-motion";
-import { process } from "@/lib/data";
+import { process as staticProcess } from "@/lib/data";
 
-export function ProcessStepper() {
+type Step = {
+  number: number;
+  title: string;
+  description: string;
+  outcome?: string;
+};
+
+type Props = {
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  steps?: Step[];
+};
+
+export function ProcessStepper(props: Props = {}) {
+  const eyebrow = props.eyebrow ?? staticProcess.eyebrow;
+  const title = props.title ?? staticProcess.title;
+  const subtitle = props.subtitle ?? staticProcess.subtitle;
+  const steps = props.steps ?? staticProcess.steps;
+
   return (
     <section id="process" className="bg-ink-50 border-y border-ink-100">
       <div className="container-x py-20 md:py-28">
@@ -14,7 +33,7 @@ export function ProcessStepper() {
             viewport={{ once: true }}
             transition={{ duration: 0.45, ease: "easeOut" }}
           >
-            {process.eyebrow}
+            {eyebrow}
           </motion.span>
           <motion.h2
             className="mt-4 text-3xl md:text-4xl lg:text-[44px] lg:leading-tight"
@@ -23,23 +42,25 @@ export function ProcessStepper() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.08 }}
           >
-            {process.title}
+            {title}
           </motion.h2>
-          <motion.p
-            className="mt-4 text-ink-500"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.45, ease: "easeOut", delay: 0.16 }}
-          >
-            {process.subtitle}
-          </motion.p>
+          {subtitle && (
+            <motion.p
+              className="mt-4 text-ink-500"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, ease: "easeOut", delay: 0.16 }}
+            >
+              {subtitle}
+            </motion.p>
+          )}
         </div>
 
         {/* Desktop: horizontal */}
         <div className="mt-14 hidden md:grid grid-cols-4 gap-6 relative">
           <div className="absolute left-0 right-0 top-5 h-px bg-ink-200" aria-hidden />
-          {process.steps.map((s, i) => (
+          {steps.map((s, i) => (
             <motion.div
               key={s.number}
               className="relative"
@@ -59,10 +80,12 @@ export function ProcessStepper() {
               </motion.div>
               <h3 className="mt-5 text-lg font-semibold">{s.title}</h3>
               <p className="mt-2 text-sm text-ink-500 leading-relaxed">{s.description}</p>
-              <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-white border border-ink-100 px-3 py-1 text-xs text-accent-600 font-medium">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
-                {s.outcome}
-              </div>
+              {s.outcome && (
+                <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-white border border-ink-100 px-3 py-1 text-xs text-accent-600 font-medium">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
+                  {s.outcome}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
@@ -71,7 +94,7 @@ export function ProcessStepper() {
         <div className="mt-10 md:hidden relative pl-12">
           <div className="absolute left-5 top-2 bottom-2 w-px bg-ink-200" aria-hidden />
           <div className="space-y-8">
-            {process.steps.map((s, i) => (
+            {steps.map((s, i) => (
               <motion.div
                 key={s.number}
                 className="relative"
@@ -85,10 +108,12 @@ export function ProcessStepper() {
                 </div>
                 <h3 className="text-lg font-semibold">{s.title}</h3>
                 <p className="mt-1 text-sm text-ink-500">{s.description}</p>
-                <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-white border border-ink-100 px-3 py-1 text-xs text-accent-600 font-medium">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
-                  {s.outcome}
-                </div>
+                {s.outcome && (
+                  <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-white border border-ink-100 px-3 py-1 text-xs text-accent-600 font-medium">
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
+                    {s.outcome}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>

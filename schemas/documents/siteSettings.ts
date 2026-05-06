@@ -14,6 +14,7 @@ export const siteSettingsDocument = defineType({
   type: "document",
 
   // Prevent editors from creating multiple copies
+  // @ts-expect-error - Valid in sanity v3 runtime but types might complain
   __experimental_actions: ["update", "publish"],
 
   groups: [

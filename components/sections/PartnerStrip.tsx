@@ -1,4 +1,4 @@
-import { partners } from "@/lib/data";
+import { partners as staticPartners } from "@/lib/data";
 
 function LogoBadge({ initials, name }: { initials: string; name: string }) {
   return (
@@ -14,14 +14,24 @@ function LogoBadge({ initials, name }: { initials: string; name: string }) {
   );
 }
 
-export function PartnerStrip() {
+type Logo = { name: string; initials: string };
+
+type Props = {
+  eyebrow?: string;
+  logos?: Logo[];
+};
+
+export function PartnerStrip(props: Props = {}) {
+  const eyebrow = props.eyebrow ?? staticPartners.eyebrow;
+  const logos = props.logos ?? staticPartners.logos;
+
   return (
     <section className="container-x py-16 md:py-20">
       <div className="text-center">
-        <span className="eyebrow">{partners.eyebrow}</span>
+        <span className="eyebrow">{eyebrow}</span>
       </div>
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-        {partners.logos.map((l) => (
+        {logos.map((l) => (
           <LogoBadge key={l.name} initials={l.initials} name={l.name} />
         ))}
       </div>
