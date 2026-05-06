@@ -37,7 +37,7 @@ export const site = {
         {
           category: "Social Media Marketing",
           items: [
-            { label: "Social Media Marketing Service", href: "/digital-marketing-services" },
+            { label: "Social Media Marketing Service", href: "/social-media-marketing-service" },
           ],
         },
       ],
@@ -188,28 +188,27 @@ export const services = {
   title: "Our digital marketing services",
   subtitle: "A full stack of capabilities. Pick a package or compose your own.",
   items: [
-    { id: "seo", icon: "Search", title: "Search Engine Optimization", summary: "Rank for the queries that matter and grow durable organic traffic." },
-    { id: "ppc", icon: "Target", title: "Pay-Per-Click", summary: "Profitable paid campaigns across Google, Bing, and social networks." },
-    { id: "social", icon: "MessageCircle", title: "Social Media Marketing", summary: "Build audience and demand on the platforms your customers actually use." },
-    { id: "content", icon: "PenLine", title: "Content Marketing", summary: "Editorial that ranks, educates, and earns trust at every funnel stage." },
-    { id: "email", icon: "Mail", title: "Email & Lifecycle", summary: "Automated journeys that turn one-time buyers into repeat customers." },
-    { id: "web", icon: "MonitorSmartphone", title: "Web Design & CRO", summary: "Fast, conversion-focused websites engineered to ship results." },
-    { id: "branding", icon: "Palette", title: "Branding", summary: "Sharper positioning and identity systems that scale across channels." },
-    { id: "analytics", icon: "BarChart3", title: "Analytics & Reporting", summary: "Clean tracking, honest dashboards, and decisions you can defend." },
+    { id: "seo", icon: "Search", title: "Search Engine Optimization", summary: "Rank for the queries that matter and grow durable organic traffic.", href: "/search-engine-optimization-seo-service" },
+    { id: "ppc", icon: "Target", title: "Pay-Per-Click", summary: "Profitable paid campaigns across Google, Bing, and social networks.", href: "/digital-marketing-services" },
+    { id: "social", icon: "MessageCircle", title: "Social Media Marketing", summary: "Build audience and demand on the platforms your customers actually use.", href: "/social-media-marketing-service" },
+    { id: "content", icon: "PenLine", title: "SEO Content Writing", summary: "Research-driven, plagiarism-free content that ranks and converts.", href: "/seo-content-writing-services" },
+    { id: "email", icon: "Mail", title: "Email Marketing", summary: "Personalised campaigns that convert prospects and recover abandoned carts.", href: "/digital-marketing-services" },
+    { id: "web", icon: "MonitorSmartphone", title: "Web Design & Development", summary: "Fast, conversion-focused websites engineered to generate leads.", href: "/web-design-services" },
+    { id: "graphic", icon: "Palette", title: "Graphic Designing", summary: "Logos, creatives, and brand systems that make every asset work harder.", href: "/graphic-designing-services" },
+    { id: "ecommerce", icon: "ShoppingCart", title: "E-commerce Marketing", summary: "Multi-channel strategies to grow your online store's revenue.", href: "/ecommerce-marketing-agency" },
+    { id: "orm", icon: "ShieldCheck", title: "Online Reputation Management", summary: "Monitor, improve, and protect your brand's online reputation.", href: "/digital-marketing-services" },
+    { id: "video", icon: "Video", title: "Video Production", summary: "Full-service video marketing from script to motion graphics.", href: "/digital-marketing-services" },
+    { id: "cro", icon: "TrendingUp", title: "Conversion Rate Optimization", summary: "Turn more visitors into customers through structured experimentation.", href: "/digital-marketing-services" },
   ],
 };
 
 export const partners = {
-  eyebrow: "Trusted by teams at",
+  eyebrow: "Certified partners",
   logos: [
-    { name: "Northwind", initials: "NW" },
-    { name: "Acme Corp", initials: "AC" },
-    { name: "Lumen Labs", initials: "LL" },
-    { name: "Globex", initials: "GX" },
-    { name: "Initech", initials: "IT" },
-    { name: "Umbra", initials: "UM" },
-    { name: "Vertex", initials: "VX" },
-    { name: "Helios", initials: "HE" },
+    { name: "Shopify", initials: "SF" },
+    { name: "Google", initials: "GG" },
+    { name: "Meta", initials: "MT" },
+    { name: "Microsoft", initials: "MS" },
   ],
 };
 
@@ -252,8 +251,8 @@ export const footer = {
       links: [
         { label: "SEO Content Writing", href: "/seo-content-writing-services" },
         { label: "E-commerce Marketing", href: "/ecommerce-marketing-agency" },
+        { label: "Social Media Marketing", href: "/social-media-marketing-service" },
         { label: "Chicago Agency", href: "/chicago-digital-marketing-agency" },
-        { label: "All Services", href: "/services" },
       ],
     },
     {

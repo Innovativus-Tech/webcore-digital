@@ -28,12 +28,13 @@ export const aboutPage = {
     ],
   },
   values: [
-    { icon: "FlaskConical", title: "Research first", body: "Every recommendation begins with data. No guessing." },
-    { icon: "ShieldCheck", title: "Radical transparency", body: "Clear pricing, honest reporting, no vanity KPIs." },
-    { icon: "Users", title: "Client-as-partner", body: "We work as an extension of your team, not a vendor." },
-    { icon: "TrendingUp", title: "Outcome obsessed", body: "Traffic and rankings only matter if they drive revenue." },
-    { icon: "Repeat2", title: "Continuous iteration", body: "We test, learn, and improve every single month." },
-    { icon: "Globe", title: "Industry agnostic", body: "Experience across healthcare, retail, SaaS, local, and more." },
+    { icon: "Sparkles", title: "Excellence", body: "We innovate and push boundaries in every strategy we execute." },
+    { icon: "Users", title: "Collaboration", body: "We work closely with clients to understand goals and develop customized solutions." },
+    { icon: "ShieldCheck", title: "Integrity", body: "Transparency and ethical standards form the foundation of every client relationship." },
+    { icon: "Lightbulb", title: "Innovation", body: "We stay current with digital trends and leverage cutting-edge tools for your campaigns." },
+    { icon: "TrendingUp", title: "Results-oriented", body: "We focus on tangible outcomes, measuring success through data-driven performance metrics." },
+    { icon: "BarChart3", title: "Data-driven approach", body: "Insights from extensive research and performance metrics inform every decision we make." },
+    { icon: "Heart", title: "Long-term relationship", body: "We build lasting partnerships based on mutual trust, respect, and shared success." },
   ],
   stats: [
     { value: "6×", label: "average search traffic uplift" },
@@ -390,6 +391,48 @@ export const ecommercePage = {
     { value: "+30%", label: "minimum conversion rate improvement in 3 months" },
     { value: "6×", label: "average organic traffic growth" },
     { value: "Multi", label: "channel integrated approach" },
+  ],
+};
+
+// ─── Social Media Marketing ───────────────────────────────────────────────────
+
+export const socialMediaPage = {
+  meta: {
+    title: "Social Media Marketing Service | WebcoreDigital",
+    description:
+      "Build brand awareness, drive revenue, and reach 4.57 billion social media users with WebcoreDigital's expert social media marketing services.",
+  },
+  hero: {
+    eyebrow: "Social Media Marketing Service",
+    title: "Build Your Brand's Social Presence and Drive Revenue",
+    subtitle:
+      "Social media channels have become the most important source of news and information in today's world. With 4.57 billion global users, the opportunity to build your brand and drive revenue is enormous.",
+    cta: { label: "Get My Free Proposal", href: "/contact" },
+  },
+  overview:
+    "Social media marketing is the utilisation of platforms such as Facebook, Instagram, Twitter, and LinkedIn to establish brand recognition and connect with your audience. It is one of the most critical components of success on an online platform, helping boost brand awareness, drive revenue, and turn customers into brand advocates. WebcoreDigital provides expert social media strategies that are properly laid down, data-driven, and tailored to your industry.",
+  features: [
+    { icon: "Eye", title: "Better Online Exposure", body: "Platforms like Facebook, Instagram, LinkedIn, and Twitter increase brand exposure and grow client interest organically and through paid campaigns." },
+    { icon: "TrendingUp", title: "High Search Rankings", body: "The more people share your content across social media channels, the more traffic is sent to your website, improving your overall search rankings." },
+    { icon: "Target", title: "Specific Audience Targeting", body: "Identify your ideal customers by age, location, and online activities, ensuring your message reaches the right people at the right time." },
+    { icon: "Users", title: "Improved Customer Reach", body: "54% of online users use social media for product research, and 49% depend on influencer recommendations — we put you in front of both audiences." },
+    { icon: "ShieldCheck", title: "Complete Brand Control", body: "You have complete control over your branding, budget, and social media content marketing strategy with full monthly campaign reporting." },
+    { icon: "Heart", title: "Enhanced Customer Trust", body: "We help you build thought leadership for your brand and create deep, meaningful connections with your audience that convert to long-term loyalty." },
+    { icon: "DollarSign", title: "Increased Profitability", body: "Social media is a cost-effective way to reach your ideal clients and drive measurable revenue without spending a huge amount of money." },
+    { icon: "MessageCircle", title: "Multiple Marketing Options", body: "We manage campaigns across Facebook, Instagram, Twitter, LinkedIn, Pinterest, YouTube, Snapchat, WhatsApp, and more." },
+  ],
+  platforms: [
+    { name: "Facebook", body: "The most popular form of online marketing. We develop targeted ad campaigns and engaging content strategies to grow your Facebook presence." },
+    { name: "Instagram", body: "Data-tracking tools help measure analytics, identify target audiences, and create content that resonates with your followers." },
+    { name: "Twitter", body: "We measure analytics, identify target audiences, and craft timely content strategies that build brand awareness on Twitter." },
+    { name: "LinkedIn", body: "We establish a professional reputation and implement the right LinkedIn strategy to generate B2B leads and build industry authority." },
+    { name: "YouTube", body: "We improve video quality, develop suitable marketing content, and help customers learn about your target audiences through YouTube." },
+    { name: "Pinterest", body: "Each pin is categorised properly with text overlays and keyword-optimised descriptions to drive traffic and product discovery." },
+  ],
+  stats: [
+    { value: "4.57B", label: "global social media users" },
+    { value: "54%", label: "of users research products on social media" },
+    { value: "49%", label: "of consumers trust influencer recommendations" },
   ],
 };
 

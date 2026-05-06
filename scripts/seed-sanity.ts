@@ -101,7 +101,7 @@ const siteSettingsDoc = {
           _key: "mg3",
           category: "Social Media Marketing",
           items: [
-            { _key: "mg3i0", label: "Social Media Marketing Service", href: "/digital-marketing-services" },
+            { _key: "mg3i0", label: "Social Media Marketing Service", href: "/social-media-marketing-service" },
           ],
         },
       ],
@@ -249,16 +249,12 @@ const pages = [
       {
         _type: "partnersSection",
         _key: "s-partners",
-        eyebrow: "Trusted by teams at",
+        eyebrow: "Certified partners",
         logos: [
-          { _key: "lg0", name: "Northwind", initials: "NW" },
-          { _key: "lg1", name: "Acme Corp", initials: "AC" },
-          { _key: "lg2", name: "Lumen Labs", initials: "LL" },
-          { _key: "lg3", name: "Globex", initials: "GX" },
-          { _key: "lg4", name: "Initech", initials: "IT" },
-          { _key: "lg5", name: "Umbra", initials: "UM" },
-          { _key: "lg6", name: "Vertex", initials: "VX" },
-          { _key: "lg7", name: "Helios", initials: "HE" },
+          { _key: "lg0", name: "Shopify", initials: "SF" },
+          { _key: "lg1", name: "Google", initials: "GG" },
+          { _key: "lg2", name: "Meta", initials: "MT" },
+          { _key: "lg3", name: "Microsoft", initials: "MS" },
         ],
       },
       {
@@ -326,12 +322,13 @@ const pages = [
         heading: "What drives us",
         cols: 3,
         items: [
-          { _key: "v0", icon: "FlaskConical", title: "Research first", body: "Every recommendation begins with data. No guessing." },
-          { _key: "v1", icon: "ShieldCheck", title: "Radical transparency", body: "Clear pricing, honest reporting, no vanity KPIs." },
-          { _key: "v2", icon: "Users", title: "Client-as-partner", body: "We work as an extension of your team, not a vendor." },
-          { _key: "v3", icon: "TrendingUp", title: "Outcome obsessed", body: "Traffic and rankings only matter if they drive revenue." },
-          { _key: "v4", icon: "Repeat2", title: "Continuous iteration", body: "We test, learn, and improve every single month." },
-          { _key: "v5", icon: "Globe", title: "Industry agnostic", body: "Experience across healthcare, retail, SaaS, local, and more." },
+          { _key: "v0", icon: "Sparkles", title: "Excellence", body: "We innovate and push boundaries in every strategy we execute." },
+          { _key: "v1", icon: "Users", title: "Collaboration", body: "We work closely with clients to understand goals and develop customised solutions." },
+          { _key: "v2", icon: "ShieldCheck", title: "Integrity", body: "Transparency and ethical standards form the foundation of every client relationship." },
+          { _key: "v3", icon: "Lightbulb", title: "Innovation", body: "We stay current with digital trends and leverage cutting-edge tools for your campaigns." },
+          { _key: "v4", icon: "TrendingUp", title: "Results-oriented", body: "We focus on tangible outcomes, measuring success through data-driven performance metrics." },
+          { _key: "v5", icon: "BarChart3", title: "Data-driven approach", body: "Insights from extensive research and performance metrics inform every decision we make." },
+          { _key: "v6", icon: "Heart", title: "Long-term relationship", body: "We build lasting partnerships based on mutual trust, respect, and shared success." },
         ],
       },
       {
@@ -823,6 +820,78 @@ const pages = [
         title: "Ready to grow your Chicago business?",
         subtitle: "Contact us to work with a results-driven digital marketing agency.",
         primaryCta: { label: "Talk to our Chicago team", href: "/contact" },
+        secondaryCta: { label: "Book a 30-min audit", href: "/contact" },
+        reassurance: "No obligation · Free 30-min audit · Reply within 1 business day",
+      },
+    ],
+  },
+
+  // ── Social Media Marketing ────────────────────────────────────────────────
+  {
+    _id: "page-social-media",
+    _type: "page",
+    title: "Social Media Marketing Service",
+    slug: { _type: "slug", current: "social-media-marketing-service" },
+    pageType: "service",
+    summary:
+      "Build brand awareness and drive revenue across Facebook, Instagram, Twitter, LinkedIn, YouTube, Pinterest, and Snapchat with expert social media marketing from WebcoreDigital.",
+    seo: {
+      metaTitle: "Social Media Marketing Service | WebcoreDigital",
+      metaDescription:
+        "Build brand awareness, drive revenue, and reach 4.57 billion social media users with WebcoreDigital's expert social media marketing services.",
+    },
+    sections: [
+      {
+        _type: "pageHeroSection",
+        _key: "s-hero",
+        eyebrow: "Social Media Marketing Service",
+        title: "Build Your Brand's Social Presence and Drive Revenue",
+        subtitle:
+          "Social media channels have become the most important source of news and information in today's world. With 4.57 billion global users, the opportunity to build your brand and drive revenue is enormous.",
+        primaryCta: { label: "Get My Free Proposal", href: "/contact" },
+      },
+      {
+        _type: "overviewSection",
+        _key: "s-overview",
+        eyebrow: "What we do",
+        heading: "Expert social media marketing tailored to your brand",
+        body: [
+          "Social media marketing is the utilisation of platforms such as Facebook, Instagram, Twitter, and LinkedIn to establish brand recognition and connect with your audience. It is one of the most critical components of success on an online platform, helping boost brand awareness, drive revenue, and turn customers into brand advocates.",
+          "WebcoreDigital provides expert social media strategies that are properly laid down, data-driven, and tailored to your industry. Whether you own a startup, an enterprise, or a multi-location company, we have the right strategy for you.",
+        ],
+        cta: { label: "Get My Free Proposal", href: "/contact" },
+      },
+      {
+        _type: "featureGridSection",
+        _key: "s-benefits",
+        eyebrow: "Benefits",
+        heading: "Why social media marketing matters for your business",
+        cols: 3,
+        items: [
+          { _key: "b0", icon: "Eye", title: "Better Online Exposure", body: "Platforms like Facebook, Instagram, LinkedIn, and Twitter increase brand exposure and grow client interest organically and through paid campaigns." },
+          { _key: "b1", icon: "TrendingUp", title: "High Search Rankings", body: "The more people share your content across social media channels, the more traffic is sent to your website, improving your overall search rankings." },
+          { _key: "b2", icon: "Target", title: "Specific Audience Targeting", body: "Identify your ideal customers by age, location, and online activities, ensuring your message reaches the right people at the right time." },
+          { _key: "b3", icon: "Users", title: "Improved Customer Reach", body: "54% of online users use social media for product research, and 49% depend on influencer recommendations — we put you in front of both audiences." },
+          { _key: "b4", icon: "ShieldCheck", title: "Complete Brand Control", body: "You have complete control over your branding, budget, and social media content marketing strategy with full monthly campaign reporting." },
+          { _key: "b5", icon: "DollarSign", title: "Increased Profitability", body: "Social media is a cost-effective way to reach your ideal clients and drive measurable revenue without spending a huge amount of money." },
+        ],
+      },
+      {
+        _type: "statsSection",
+        _key: "s-stats",
+        bg: "dark",
+        stats: [
+          { _key: "st0", value: "4.57B", label: "global social media users" },
+          { _key: "st1", value: "54%", label: "of users research products on social media" },
+          { _key: "st2", value: "49%", label: "of consumers trust influencer recommendations" },
+        ],
+      },
+      {
+        _type: "ctaSection",
+        _key: "s-cta",
+        title: "Ready to take your business to the next level?",
+        subtitle: "Contact us to work with a results-driven social media marketing agency.",
+        primaryCta: { label: "Get My Free Proposal", href: "/contact" },
         secondaryCta: { label: "Book a 30-min audit", href: "/contact" },
         reassurance: "No obligation · Free 30-min audit · Reply within 1 business day",
       },
