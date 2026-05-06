@@ -117,24 +117,26 @@ export const webDesignPage = {
   meta: {
     title: "Web Design Services | WebcoreDigital",
     description:
-      "Professional, conversion-focused web design services that transform your online presence and turn visitors into customers.",
+      "Web design services for creating custom websites to boost sales. WebcoreDigital builds corporate, eCommerce, mobile-friendly, and personalised websites.",
   },
   hero: {
     eyebrow: "Web Design Services",
-    title: "Websites that convert visitors into customers",
+    title: "Web Design Services For Creating Custom Websites To Boost Sales",
     subtitle:
-      "We design and develop professional, fast, conversion-focused websites that elevate your brand's online presence, built to generate leads and drive sales, not just look good.",
-    cta: { label: "Start your project", href: "/contact" },
+      "You need a website that serves as a digital representation of your business organisation. Our important ingredients for a top-notch, precise, and distinctive website design are originality, dedication, and client happiness.",
+    cta: { label: "Get My Free Proposal", href: "/contact" },
   },
   overview:
-    "WebcoreDigital is your one-stop solution for all website needs. From redesigning existing sites to building from scratch, we provide answers to both simple and complex web requirements. Our designs are not just aesthetically striking; they are engineered around user behaviour and conversion principles.",
+    "A web design agency can provide you with a one-of-a-kind website design appropriate for your business or personal website. WebcoreDigital provides the best website design services to meet the needs of many niche markets, including corporations, medium-sized and large organisations, professions, eCommerce platforms, and many more. We consider everything — including the navigation and colour style — to create a design that complements your brand and offers your customers a pleasurable browsing experience.",
   features: [
-    { icon: "Sparkles", title: "Custom UI/UX Design", body: "Tailored interfaces that reflect your brand and guide users toward the actions that matter most to your business." },
-    { icon: "Gauge", title: "Conversion Rate Optimisation", body: "Every layout, CTA placement, and page flow is designed to maximise lead generation and sales." },
-    { icon: "Smartphone", title: "Fully Responsive", body: "Flawless experiences on mobile, tablet, and desktop. No compromises." },
-    { icon: "Zap", title: "Performance-First Build", body: "Fast-loading, Core Web Vitals-optimised sites that rank well and keep users engaged." },
-    { icon: "RefreshCw", title: "Redesign & Migration", body: "Refreshing outdated sites while preserving SEO equity and improving the user journey." },
-    { icon: "LayoutDashboard", title: "CMS Integration", body: "Easy-to-manage content powered by headless CMS platforms so your team stays in control." },
+    { icon: "Building2", title: "Corporate Website Design", body: "We help you build a reputation for your brand. A stylish and informative website customised to your needs and business niche, geared to the objectives that your brand represents." },
+    { icon: "ShoppingCart", title: "eCommerce Websites", body: "Visually appealing web design with multiple categories applicable to your business and straightforward call-to-action buttons to make the site easier to use and increase conversions." },
+    { icon: "Fingerprint", title: "Personalised Website", body: "As an experienced website design company, we guarantee to create a website that instils confidence in your targeted audience about your ability to give service." },
+    { icon: "LayoutTemplate", title: "Page Layout Design", body: "The first thing a potential buyer sees is your landing page. We create landing pages that awe the viewer and emphasise your company's goals and results to keep them engaged." },
+    { icon: "Smartphone", title: "Mobile-Friendly Web Design", body: "Invest in responsive web design that provides your customers with a flexible, fluid experience across all devices — mobile, tablet, and desktop." },
+    { icon: "PenLine", title: "Wireframing", body: "Our knowledgeable professionals demonstrate the fundamental structure and components of your website across various web pages, giving you a clear feel of how people will perceive your site." },
+    { icon: "Palette", title: "Graphic Design", body: "We design specialised blog pages and visual elements for your website to present material specific to your sector in an engaging and brand-consistent way." },
+    { icon: "Fingerprint", title: "Logo Design", body: "Your brand will be identified by your logo — it should be exceptional and exalted. We edit existing logos or develop magnificent, one-of-a-kind logos tailored to your brand identity." },
   ],
   process: [
     { number: 1, title: "Discovery", description: "We audit your current site and map your business goals to design requirements." },
@@ -144,7 +146,7 @@ export const webDesignPage = {
   ],
   stats: [
     { value: "3×", label: "average lead increase post-redesign" },
-    { value: "<2s", label: "target page load time" },
+    { value: "<1wk", label: "turnaround for simple websites" },
     { value: "100%", label: "mobile-responsive delivery" },
   ],
 };
@@ -155,24 +157,32 @@ export const digitalMarketingPage = {
   meta: {
     title: "Digital Marketing Services | WebcoreDigital",
     description:
-      "Integrated digital marketing strategies tailored to grow your traffic, leads, and ROI, built by WebcoreDigital.",
+      "Integrated digital marketing strategies tailored to grow your traffic, leads, and ROI. WebcoreDigital serves Chicago, Los Angeles, Miami, Arizona, and more.",
   },
   hero: {
     eyebrow: "Digital Marketing Services",
     title: "Integrated digital marketing that drives measurable growth",
     subtitle:
-      "Customized digital marketing solutions based on deep research, designed to generate qualified leads, increase traffic and visibility, improve branding, and boost sales.",
-    cta: { label: "Get your free audit", href: "/contact" },
+      "When seeking a product or service, over 75% of customers first research online. WebcoreDigital creates targeted campaigns that generate measurable outcomes and bring in high-quality leads for your business.",
+    cta: { label: "Get My Free Proposal", href: "/contact" },
   },
   overview:
-    "WebcoreDigital's services encompass the digital world that goes beyond time and space. We offer a wide range of digital marketing solutions, each one tailored to the specific needs of your market, audience, and business goals. Our integrated approach means all channels work together, not in silos.",
+    "Webcore Digital is a digital marketing business that focuses on the needs of its clients and strives to fulfill all of their requirements. Because of our adaptability and faith in our marketing ability, we are convinced that we can bring in customers for you. We are not static — we believe in changing strategies as per requirements and circumstances. You can rely on Webcore Digital to modify the internet marketing services they provide to fulfill criteria unique to your business. We become an essential member of your organization rather than merely functioning as an agency. We also provide our professional digital marketing services in Chicago, Los Angeles, Miami, Arizona, and many more locations.",
   features: [
-    { icon: "Search", title: "Search Engine Optimisation", body: "Technical, on-page, and off-page SEO to rank for the queries that drive revenue." },
-    { icon: "Target", title: "Pay-Per-Click (PPC)", body: "Profitable Google, Bing, and social ad campaigns with rigorous bid management." },
-    { icon: "MessageCircle", title: "Social Media Marketing", body: "Audience-building and demand generation on the platforms your customers use most." },
-    { icon: "Mail", title: "Email & Lifecycle", body: "Automated journeys that nurture leads and turn one-time buyers into loyal customers." },
-    { icon: "PenLine", title: "Content Marketing", body: "Editorial strategy and production that builds authority and earns trust at every funnel stage." },
-    { icon: "BarChart3", title: "Analytics & Reporting", body: "Honest dashboards and attribution modelling so you know exactly what is working." },
+    { icon: "BarChart3", title: "Franchise SEO", body: "Reach more customers and improve your business reputation with location-specific content, geo-modified service pages, and consistent brand management across all your franchise locations." },
+    { icon: "Search", title: "Search Engine Optimisation", body: "Thorough keyword research, on-page and off-page optimisation, and Google Search Console tracking to increase your organic rankings and drive high-quality traffic and leads." },
+    { icon: "MessageCircle", title: "Social Media Marketing", body: "Social media plans that keep your audience interested, using data and analytics for brand management and paid advertising strategies tailored to your goals." },
+    { icon: "MonitorSmartphone", title: "Web Design", body: "Niche-specific websites built by WordPress experts with in-depth sector research, accessible design, and ongoing maintenance to attract your ideal customers." },
+    { icon: "Target", title: "PPC Management", body: "Data-driven pay-per-click campaigns with expert bid optimisation, custom ad creation, ROI tracking, and seasonal trend strategies to maximise leads and visitors." },
+    { icon: "PenLine", title: "Content Writing", body: "SEO-driven content that follows Google's guidelines, with attention-grabbing headlines, high-performing keywords, and graphics that make reading simple and enjoyable." },
+    { icon: "Video", title: "Video Production", body: "Full-service video marketing from location scouting and scriptwriting to motion graphics and editing — powerful storytelling that takes your brand to the next level." },
+    { icon: "ShieldCheck", title: "Online Reputation Management", body: "Improve your ratings, monitor reviews, post responses, and streamline operations with cutting-edge ORM tools to get more positive reviews." },
+    { icon: "ShoppingCart", title: "eCommerce Marketing", body: "eCommerce SEO and PPC solutions to capture top-of-funnel traffic, drive product reviews, optimise product pages, and adjust marketing to customer needs." },
+    { icon: "Mail", title: "Email Marketing", body: "Personalised email newsletters that avoid spam folders, build your customer database, and include powerful content that increases the likelihood of customer action." },
+    { icon: "TrendingUp", title: "Conversion Rate Optimisation", body: "Optimise your website for mobile and voice search, create uncluttered landing pages, add verified payment methods, and simplify navigation to increase purchases." },
+    { icon: "Globe", title: "Web Hosting", body: "Network monitoring, system backup and restoration, malware scanning, WordPress speed optimisation, unlimited bandwidth, DDoS protection, and a free SSL certificate." },
+    { icon: "Layers", title: "Web Design & Development", body: "Custom-built, SEO-optimised, mobile-responsive websites with visual hierarchy, clear CTAs, easy-to-fill form fields, and persona-based content to drive conversions." },
+    { icon: "Link", title: "Link Building", body: "High-authority backlink generation through sponsored ads, sponsorships, collaborations, data-driven infographics, and guest blogging to increase sales and build trust." },
   ],
   outcomes: [
     { icon: "TrendingUp", title: "More qualified leads", body: "Campaigns tuned to attract buyers, not just visitors." },
@@ -193,30 +203,30 @@ export const seoContentWritingPage = {
   meta: {
     title: "SEO Content Writing Services | WebcoreDigital",
     description:
-      "Professional SEO content writing: in-depth research, plagiarism-free, optimised for rankings and brand messaging.",
+      "Boost your online presence with WebcoreDigital's SEO content writing: keyword research, plagiarism-free writing, and content optimised to rank and convert.",
   },
   hero: {
-    eyebrow: "SEO Content Writing",
-    title: "Content that ranks, resonates, and converts",
+    eyebrow: "SEO Content Writing Services",
+    title: "Boosting Online Presence and Driving Results",
     subtitle:
-      "Our SEO content writers combine deep keyword research with compelling storytelling to produce content that earns top rankings and drives real business outcomes.",
-    cta: { label: "Get a content quote", href: "/contact" },
+      "A strong online presence is crucial for organisations to thrive in today's digital world. Businesses need high-quality content optimised for search engines — this is where our SEO content writing services come into play.",
+    cta: { label: "Get My Free Proposal", href: "/contact" },
   },
   overview:
-    "Great content is the foundation of every successful digital marketing campaign. Our professional writers conduct thorough research and analysis before writing a single word, producing SEO-friendly, 100% plagiarism-free content that both search engines and your audience will value.",
+    "SEO content writing involves creating valuable, relevant, and optimised content that ranks well in search engine results pages (SERPs). It is a strategic approach that combines the art of writing with the science of search engine algorithms. SEO content not only attracts search engine traffic but also engages and converts visitors into customers.",
   features: [
-    { icon: "Search", title: "Keyword Research & Mapping", body: "Intent-driven keyword strategy mapped to your funnel stages before writing begins." },
-    { icon: "FileText", title: "Blog & Article Writing", body: "Long-form content that builds topical authority and earns consistent organic traffic." },
-    { icon: "LayoutTemplate", title: "Landing Page Copy", body: "Conversion-focused copy for product and service pages optimised for both rankings and sales." },
-    { icon: "ShieldCheck", title: "100% Plagiarism-Free", body: "Every piece is original, verified, and crafted specifically for your brand." },
-    { icon: "Edit3", title: "Brand Voice Alignment", body: "We write to match your tone, terminology, and audience, consistently across all content." },
-    { icon: "Globe", title: "Multi-Industry Experience", body: "Experience across healthcare, retail, SaaS, legal, local business, and more." },
+    { icon: "Eye", title: "Enhanced Visibility", body: "With billions of websites competing for attention, appearing on the first page of search results is vital. Our SEO content ensures your website ranks higher, driving organic traffic and increasing online visibility." },
+    { icon: "Target", title: "Targeted Traffic", body: "By incorporating relevant keywords and phrases, our SEO writers attract highly targeted traffic — people actively searching for the products or services you offer, increasing the chances of conversion." },
+    { icon: "Users", title: "User Experience", body: "Our SEO content not only caters to search engines but also delivers a seamless user experience. Engaging, easy-to-read content keeps visitors on your website longer, reducing bounce rates and increasing conversions." },
+    { icon: "ShieldCheck", title: "Credibility and Authority", body: "Well-crafted, informative, and authoritative content positions your business as an industry expert, building trust with your audience and establishing credibility that leads to an increased brand reputation." },
+    { icon: "TrendingUp", title: "Improved Search Engine Rankings", body: "We optimise your website's content with relevant keywords, meta tags, headings, and on-page elements to improve visibility on SERPs, leading to higher organic traffic and better search rankings." },
+    { icon: "Star", title: "Competitive Advantage", body: "In today's digital landscape, competition is fierce. Our SEO content writing gives you a competitive advantage by optimising your website to stand out from competitors and capture a larger share of your target market." },
   ],
   process: [
-    { number: 1, title: "Research", description: "Keyword and competitor research to identify the best opportunities." },
+    { number: 1, title: "Research", description: "Keyword and competitor research to identify the best opportunities for your industry." },
     { number: 2, title: "Brief", description: "Detailed content brief covering intent, structure, and brand voice." },
-    { number: 3, title: "Write", description: "Expert writers produce original, optimised content." },
-    { number: 4, title: "Review & Publish", description: "Editorial review, plagiarism check, and delivery." },
+    { number: 3, title: "Write", description: "Expert writers produce original, optimised, and engaging content." },
+    { number: 4, title: "Review & Publish", description: "Editorial review, plagiarism check, on-page optimisation, and delivery." },
   ],
   stats: [
     { value: "100%", label: "plagiarism-free guarantee" },
@@ -229,26 +239,32 @@ export const seoContentWritingPage = {
 
 export const seoPage = {
   meta: {
-    title: "Search Engine Optimization (SEO) Services | WebcoreDigital",
+    title: "Search Engine Optimization (SEO) Service | WebcoreDigital",
     description:
-      "Comprehensive SEO services including technical SEO, multi-location SEO, and link building to grow your search visibility.",
+      "Need more traffic and leads? WebcoreDigital provides comprehensive SEO services: technical SEO, local SEO, link building, Amazon SEO, Shopify SEO, and more.",
   },
   hero: {
-    eyebrow: "Search Engine Optimization",
-    title: "Dominate search results: locally and nationally",
+    eyebrow: "Search Engine Optimization (SEO) Service",
+    title: "Rank higher, get more traffic, and grow your leads",
     subtitle:
-      "From technical foundations to authoritative link profiles, our SEO service is built to improve your marketing effectiveness and drive sustained organic growth.",
-    cta: { label: "Get your SEO audit", href: "/contact" },
+      "SEO is the key to ranking at the top of search results. WebcoreDigital can provide you with the best SEO strategies — and SEO is always working for your business, even when you're not.",
+    cta: { label: "Get My Free Proposal", href: "/contact" },
   },
   overview:
-    "Using WebcoreDigital's SEO services can significantly improve your marketing effectiveness. We specialise in multi-location and franchise SEO, creating location-specific content and campaigns that boost search performance, local visibility, and presence for each market you serve.",
+    "Need help ranking your website or need more traffic and leads? We at WebcoreDigital can help you with the problem and get you to the top. A lot of times, organisations know they want to rank at the top but are unaware of how. Well, SEO is the key. SEO should be thought of as a worker: you can't stop working on SEO. It is always working for your business, even when you're not there — customers find their way to your website and learn what your business has to offer.",
   features: [
-    { icon: "Code", title: "Technical SEO", body: "Site architecture, crawlability, Core Web Vitals, schema markup: the invisible foundation every campaign needs." },
-    { icon: "FileText", title: "On-Page Optimisation", body: "Title tags, meta descriptions, content structure, and internal linking built for targeted keywords." },
-    { icon: "Link", title: "Link Building", body: "White-hat link acquisition strategies to build domain authority and outrank competitors." },
-    { icon: "MapPin", title: "Local & Multi-Location SEO", body: "Location-specific content and GBP optimisation for businesses serving multiple areas." },
-    { icon: "Search", title: "Keyword Discovery", body: "Intent-mapped research to find the queries that actually drive revenue, not just traffic." },
-    { icon: "BarChart3", title: "Transparent Reporting", body: "Monthly reports that connect SEO activity to business outcomes: rankings, traffic, and leads." },
+    { icon: "Link", title: "Link Building", body: "Backlinks are an important aspect of moving up in search results. We work with a team dedicated to link building with connections to high-quality, niche-relevant websites." },
+    { icon: "Search", title: "Keyword Research & Strategy", body: "We analyse your current ranking keywords, take your keyword wishlist into account, and conduct additional research to build a list that makes the most sense for your site and industry." },
+    { icon: "Code", title: "Technical SEO", body: "Improving back-end elements like page load speed makes it easier for search engines to index your content, improving rankings and user satisfaction." },
+    { icon: "BarChart3", title: "Franchise SEO", body: "We publish location-specific content, use Nextdoor ads, and create unique web designs to give your franchise a bigger impact and bring in more leads and revenue." },
+    { icon: "Globe", title: "Off-Page SEO", body: "Off-page optimisation builds trust and exposure through social media marketing, link building, and influencer outreach to earn qualified links and positive reviews." },
+    { icon: "FileText", title: "On-Page SEO", body: "Original keyword-rich content, optimised headlines and HTML tags, and high-resolution images — all aligned with search engine best practices to boost credibility." },
+    { icon: "MapPin", title: "Local SEO", body: "64% of customers search for local businesses online. We optimise your Google Business Profile so you attract customers in your area who are ready to buy." },
+    { icon: "Package", title: "Amazon SEO", body: "Make your business stand out on Amazon. We optimise product listings and use goal-oriented Amazon Marketing Services (AMS) solutions to get your products in front of the right buyers." },
+    { icon: "ShoppingCart", title: "Shopify SEO", body: "Shopify SEO analysis, web design, paid advertising, and review response publications to give your customers a better overall Shopify experience." },
+    { icon: "MonitorSmartphone", title: "eCommerce SEO", body: "Personalised brand experiences, targeted email marketing campaigns, mobile and voice search readiness, and Walmart Marketplace integration to increase sales around the clock." },
+    { icon: "TrendingUp", title: "Conversion Rate Optimisation", body: "We combine PPC with SEO, analyse websites, optimise landing pages, and run A/B testing to maximise customer lifetime value and grow online sales." },
+    { icon: "PenLine", title: "Content Writing", body: "Our writers produce SEO-optimised blog posts and service and product page updates. Search engines favour websites that regularly publish fresh, valuable content." },
   ],
   process: [
     { number: 1, title: "Audit", description: "Technical audit, competitor gap analysis, and keyword opportunity mapping." },
@@ -269,28 +285,38 @@ export const graphicDesignPage = {
   meta: {
     title: "Graphic Designing Services | WebcoreDigital",
     description:
-      "Creative, intuitive graphic design services that elevate brand identity and support every digital marketing channel.",
+      "Welcome to the world of graphic design solutions. WebcoreDigital creates logos, social media visuals, web designs, motion graphics, and marketing materials.",
   },
   hero: {
-    eyebrow: "Graphic Design Services",
-    title: "Design that elevates your brand and drives results",
+    eyebrow: "Graphic Designing Services",
+    title: "Where imagination and practicality create compelling visual narratives",
     subtitle:
-      "Creative, intuitive, and thought-provoking design work built to strengthen your brand identity and make every marketing asset work harder.",
-    cta: { label: "Start a design project", href: "/contact" },
+      "In the current digital age, establishing a powerful visual presence is crucial. With billions of people using the internet worldwide, the future of business is online — and having the best first impression makes all the difference.",
+    cta: { label: "Get My Free Proposal", href: "/contact" },
   },
   overview:
-    "Good design is not decoration; it is communication. Our graphic design team creates visual systems that make your brand instantly recognisable and trusted. From logo design to marketing creatives, every asset is crafted with purpose and built to perform across every digital channel.",
+    "At Webcore Digital, we are passionate about using graphic design's attractive abilities to assist you in captivating your audience and achieving your objectives. We provide specialised solutions catered to your unique requirements — whether you are a startup in need of a brand identity or an established business wanting to update your visual presence. Our professional team has a thorough grasp of design trends and can turn your notions into aesthetically appealing works of art.",
+  whyChoose: [
+    { icon: "Sparkles", title: "Customised Solutions", body: "Every business is different, therefore every client has different design needs. We develop designs in line with your objectives that appeal to your target audience." },
+    { icon: "Users", title: "Teamwork and Collaboration", body: "We respect your feedback and think that teamwork leads to the best ideas. Our designers are superb listeners who take time to comprehend your objectives, target market, and tastes." },
+    { icon: "Star", title: "Professional Group", body: "Our outstanding team of graphic design professionals have a thorough grasp of design trends and concepts, turning your ideas into aesthetically appealing works of art." },
+    { icon: "Clock", title: "Seamless and On-Schedule Delivery", body: "We respect your time and are aware of the significance of meeting deadlines. From early concept talks through final delivery, you can count on a smooth and quick design process." },
+  ],
   features: [
-    { icon: "Fingerprint", title: "Logo & Brand Identity", body: "Distinctive marks and identity systems that communicate your values at a glance." },
-    { icon: "Layers", title: "Marketing Creatives", body: "Social graphics, display ads, email headers, and campaign assets, all on-brand." },
-    { icon: "Image", title: "Web & UI Graphics", body: "Icons, illustrations, and interface assets designed to enhance user experience." },
-    { icon: "FileImage", title: "Infographics & Data Viz", body: "Complex information made simple, designed to engage and earn shares." },
-    { icon: "Printer", title: "Print & Collateral", body: "Brochures, pitch decks, business cards, and event materials." },
-    { icon: "Repeat2", title: "Brand Guidelines", body: "Comprehensive brand style guides to keep every touchpoint consistent." },
+    { icon: "Fingerprint", title: "Logo Designing Services", body: "A logo is your brand's most important visual identity component. We create distinctive logos that represent your company message and set you apart from competitors." },
+    { icon: "MonitorSmartphone", title: "Website Designing Services", body: "SEO-friendly, aesthetically attractive website designs that create a great first impression and turn visitors into customers." },
+    { icon: "MessageCircle", title: "Social Media Graphics", body: "Eye-catching social media visuals designed to increase brand awareness, drive engagement, and grow your audience across all platforms." },
+    { icon: "Palette", title: "Branding Design Services", body: "Develop customer loyalty and brand repute with unified branding — from colour palettes and typography to complete visual identity systems." },
+    { icon: "Layers", title: "Marketing Material Design", body: "Flyers, brochures, business cards, and banners — professional print and digital marketing materials that leave a lasting impression." },
+    { icon: "Video", title: "Motion Graphics Services", body: "Brand-consistent animated graphics for video, web, and social media that communicate complex ideas in a visually engaging way." },
+    { icon: "LayoutTemplate", title: "Landing Page Design", body: "Conversion-focused UI/UX designs for landing pages that emphasise your company's goals and drive visitors toward taking action." },
+    { icon: "FileImage", title: "Illustrations Design", body: "Customised illustrations aligned with your brand identity, helping you express complicated ideas in a visually appealing and simple-to-understand way." },
+    { icon: "Presentation", title: "Presentation Design", body: "PowerPoint and pitch deck designs that leave an impact on your audience and communicate your ideas with professionalism and clarity." },
+    { icon: "Repeat2", title: "Ad Original Designing", body: "Dynamic and motion ad concepts for digital advertising campaigns that capture attention and drive clicks across all online platforms." },
   ],
   stats: [
-    { value: "Creative", label: "intuitive and thought-provoking design" },
-    { value: "100%", label: "custom, no templates" },
+    { value: "100%", label: "custom designs, no templates" },
+    { value: "On-time", label: "delivery on every project" },
     { value: "Multi", label: "channel-ready assets" },
   ],
 };
