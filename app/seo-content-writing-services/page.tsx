@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { PageHero } from "@/components/sections/PageHero";
-import { OverviewSection } from "@/components/sections/OverviewSection";
+import { ServiceProposalSection } from "@/components/sections/ServiceProposalSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { InnerProcessStepper } from "@/components/sections/InnerProcessStepper";
 import { StatsRow } from "@/components/sections/StatsRow";
@@ -21,18 +21,20 @@ export default function SeoContentWritingPage() {
       <SiteHeader />
       <main>
         <PageHero {...seoContentWritingPage.hero} />
-        <OverviewSection
-          eyebrow="Content that works"
-          heading="Research before a single word is written"
-          body={seoContentWritingPage.overview}
-          cta={{ label: "Get a content quote", href: "/contact" }}
+
+        <ServiceProposalSection
+          paragraphs={seoContentWritingPage.overview}
+          service="SEO Content Writing"
         />
+
         <FeatureGrid
           eyebrow="What we offer"
           heading="Full-service SEO content writing"
+          subheading="Research-driven content that ranks, educates, and converts — from blog posts to landing page copy."
           items={seoContentWritingPage.features}
           cols={3}
         />
+
         <InnerProcessStepper heading="Our content process" steps={seoContentWritingPage.process} />
         <StatsRow stats={seoContentWritingPage.stats} />
         <CTABand />

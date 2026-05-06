@@ -150,8 +150,10 @@ export const webDesignPage = {
       "You need a website that serves as a digital representation of your business organisation. Our important ingredients for a top-notch, precise, and distinctive website design are originality, dedication, and client happiness.",
     cta: { label: "Get My Free Proposal", href: "/contact" },
   },
-  overview:
-    "A web design agency can provide you with a one-of-a-kind website design appropriate for your business or personal website. WebcoreDigital provides the best website design services to meet the needs of many niche markets, including corporations, medium-sized and large organisations, professions, eCommerce platforms, and many more. We consider everything — including the navigation and colour style — to create a design that complements your brand and offers your customers a pleasurable browsing experience.",
+  overview: [
+    "A web design agency can provide you with a one-of-a-kind website design appropriate for your business or personal website. WebcoreDigital provides the best website design services to meet the needs of many niche markets, including corporations, medium-sized and large organisations, professions, eCommerce platforms, and many more.",
+    "We consider everything — including the navigation and colour style — to create a design that complements your brand and offers your customers a pleasurable browsing experience.",
+  ],
   features: [
     { icon: "Building2", title: "Corporate Website Design", body: "We help you build a reputation for your brand. A stylish and informative website customised to your needs and business niche, geared to the objectives that your brand represents." },
     { icon: "ShoppingCart", title: "eCommerce Websites", body: "Visually appealing web design with multiple categories applicable to your business and straightforward call-to-action buttons to make the site easier to use and increase conversions." },
@@ -190,8 +192,11 @@ export const digitalMarketingPage = {
       "When seeking a product or service, over 75% of customers first research online. WebcoreDigital creates targeted campaigns that generate measurable outcomes and bring in high-quality leads for your business.",
     cta: { label: "Get My Free Proposal", href: "/contact" },
   },
-  overview:
-    "Webcore Digital is a digital marketing business that focuses on the needs of its clients and strives to fulfill all of their requirements. Because of our adaptability and faith in our marketing ability, we are convinced that we can bring in customers for you. We are not static — we believe in changing strategies as per requirements and circumstances. You can rely on Webcore Digital to modify the internet marketing services they provide to fulfill criteria unique to your business. We become an essential member of your organization rather than merely functioning as an agency. We also provide our professional digital marketing services in Chicago, Los Angeles, Miami, Arizona, and many more locations.",
+  overview: [
+    "Webcore Digital is a digital marketing business that focuses on the needs of its clients and strives to fulfill all of their requirements. Because of our adaptability and faith in our marketing ability, we are convinced that we can bring in customers for you.",
+    "We are not static — we believe in changing strategies as per requirements and circumstances. You can rely on Webcore Digital to modify the internet marketing services they provide to fulfill criteria unique to your business.",
+    "We become an essential member of your organization rather than merely functioning as an agency. We also provide our professional digital marketing services in Chicago, Los Angeles, Miami, Arizona, and many more locations.",
+  ],
   features: [
     { icon: "BarChart3", title: "Franchise SEO", body: "Reach more customers and improve your business reputation with location-specific content, geo-modified service pages, and consistent brand management across all your franchise locations." },
     { icon: "Search", title: "Search Engine Optimisation", body: "Thorough keyword research, on-page and off-page optimisation, and Google Search Console tracking to increase your organic rankings and drive high-quality traffic and leads." },
@@ -236,8 +241,10 @@ export const seoContentWritingPage = {
       "A strong online presence is crucial for organisations to thrive in today's digital world. Businesses need high-quality content optimised for search engines — this is where our SEO content writing services come into play.",
     cta: { label: "Get My Free Proposal", href: "/contact" },
   },
-  overview:
-    "SEO content writing involves creating valuable, relevant, and optimised content that ranks well in search engine results pages (SERPs). It is a strategic approach that combines the art of writing with the science of search engine algorithms. SEO content not only attracts search engine traffic but also engages and converts visitors into customers.",
+  overview: [
+    "SEO content writing involves creating valuable, relevant, and optimised content that ranks well in search engine results pages (SERPs). It is a strategic approach that combines the art of writing with the science of search engine algorithms.",
+    "SEO content not only attracts search engine traffic but also engages and converts visitors into customers.",
+  ],
   features: [
     { icon: "Eye", title: "Enhanced Visibility", body: "With billions of websites competing for attention, appearing on the first page of search results is vital. Our SEO content ensures your website ranks higher, driving organic traffic and increasing online visibility." },
     { icon: "Target", title: "Targeted Traffic", body: "By incorporating relevant keywords and phrases, our SEO writers attract highly targeted traffic — people actively searching for the products or services you offer, increasing the chances of conversion." },
@@ -274,8 +281,11 @@ export const seoPage = {
       "SEO is the key to ranking at the top of search results. WebcoreDigital can provide you with the best SEO strategies — and SEO is always working for your business, even when you're not.",
     cta: { label: "Get My Free Proposal", href: "/contact" },
   },
-  overview:
-    "Need help ranking your website or need more traffic and leads? We at WebcoreDigital can help you with the problem and get you to the top. A lot of times, organisations know they want to rank at the top but are unaware of how. Well, SEO is the key. SEO should be thought of as a worker: you can't stop working on SEO. It is always working for your business, even when you're not there — customers find their way to your website and learn what your business has to offer.",
+  overview: [
+    "Need help ranking your website or need more traffic and leads? We at WebcoreDigital can help you with the problem and get you to the top.",
+    "A lot of times, organisations know they want to rank at the top but are unaware of how. Well, SEO is the key.",
+    "SEO should be thought of as a worker: you can't stop working on SEO. It is always working for your business, even when you're not there — customers find their way to your website and learn what your business has to offer.",
+  ],
   features: [
     { icon: "Link", title: "Link Building", body: "Backlinks are an important aspect of moving up in search results. We work with a team dedicated to link building with connections to high-quality, niche-relevant websites." },
     { icon: "Search", title: "Keyword Research & Strategy", body: "We analyse your current ranking keywords, take your keyword wishlist into account, and conduct additional research to build a list that makes the most sense for your site and industry." },
@@ -318,8 +328,11 @@ export const graphicDesignPage = {
       "In the current digital age, establishing a powerful visual presence is crucial. With billions of people using the internet worldwide, the future of business is online — and having the best first impression makes all the difference.",
     cta: { label: "Get My Free Proposal", href: "/contact" },
   },
-  overview:
-    "At Webcore Digital, we are passionate about using graphic design's attractive abilities to assist you in captivating your audience and achieving your objectives. We provide specialised solutions catered to your unique requirements — whether you are a startup in need of a brand identity or an established business wanting to update your visual presence. Our professional team has a thorough grasp of design trends and can turn your notions into aesthetically appealing works of art.",
+  overview: [
+    "At Webcore Digital, we are passionate about using graphic design's attractive abilities to assist you in captivating your audience and achieving your objectives.",
+    "We provide specialised solutions catered to your unique requirements — whether you are a startup in need of a brand identity or an established business wanting to update your visual presence.",
+    "Our professional team has a thorough grasp of design trends and can turn your notions into aesthetically appealing works of art.",
+  ],
   whyChoose: [
     { icon: "Sparkles", title: "Customised Solutions", body: "Every business is different, therefore every client has different design needs. We develop designs in line with your objectives that appeal to your target audience." },
     { icon: "Users", title: "Teamwork and Collaboration", body: "We respect your feedback and think that teamwork leads to the best ideas. Our designers are superb listeners who take time to comprehend your objectives, target market, and tastes." },
@@ -459,8 +472,10 @@ export const ppcPage = {
       "Pay-per-click advertising gives you an immediate campaign boost and a fast return on investment. Maintain full control of your paid search and acquire positive business outcomes with targeted PPC services.",
     cta: { label: "Get My Free Proposal", href: "/contact" },
   },
-  overview:
-    "WebcoreDigital is a digital marketing agency focused on the needs of its clients. The digital landscape keeps growing, and figuring out advertising avenues while maximising all possible conversion paths is the key motive behind every business expansion. With pay-per-click advertising, you only pay when a user clicks your ad — giving you full control over your budget and a clear line of sight from spend to revenue.",
+  overview: [
+    "WebcoreDigital is a digital marketing agency focused on the needs of its clients. The digital landscape keeps growing, and figuring out advertising avenues while maximising all possible conversion paths is the key motive behind every business expansion.",
+    "With pay-per-click advertising, you only pay when a user clicks your ad — giving you full control over your budget and a clear line of sight from spend to revenue.",
+  ],
   challenge:
     "Many business websites stay invisible to their target audience despite having good advertising techniques. Online companies face increased competition, changing customer demands, high digital ad expenditure, and varying market standards. PPC cuts through this noise by putting your brand directly in front of people who are actively searching for what you offer.",
   whatIsPpc: {
@@ -540,8 +555,11 @@ export const socialMediaPage = {
       "Social media channels have become the most important source of news and information in today's world. With 4.57 billion global users, the opportunity to build your brand and drive revenue is enormous.",
     cta: { label: "Get My Free Proposal", href: "/contact" },
   },
-  overview:
-    "Social media marketing is the utilisation of platforms such as Facebook, Instagram, Twitter, and LinkedIn to establish brand recognition and connect with your audience. It is one of the most critical components of success on an online platform, helping boost brand awareness, drive revenue, and turn customers into brand advocates. WebcoreDigital provides expert social media strategies that are properly laid down, data-driven, and tailored to your industry.",
+  overview: [
+    "Social media marketing is the utilisation of platforms such as Facebook, Instagram, Twitter, and LinkedIn to establish brand recognition and connect with your audience.",
+    "It is one of the most critical components of success on an online platform, helping boost brand awareness, drive revenue, and turn customers into brand advocates.",
+    "WebcoreDigital provides expert social media strategies that are properly laid down, data-driven, and tailored to your industry.",
+  ],
   features: [
     { icon: "Eye", title: "Better Online Exposure", body: "Platforms like Facebook, Instagram, LinkedIn, and Twitter increase brand exposure and grow client interest organically and through paid campaigns." },
     { icon: "TrendingUp", title: "High Search Rankings", body: "The more people share your content across social media channels, the more traffic is sent to your website, improving your overall search rankings." },

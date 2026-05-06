@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { PageHero } from "@/components/sections/PageHero";
-import { OverviewSection } from "@/components/sections/OverviewSection";
+import { ServiceProposalSection } from "@/components/sections/ServiceProposalSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { InnerProcessStepper } from "@/components/sections/InnerProcessStepper";
 import { StatsRow } from "@/components/sections/StatsRow";
@@ -21,18 +21,20 @@ export default function WebDesignPage() {
       <SiteHeader />
       <main>
         <PageHero {...webDesignPage.hero} />
-        <OverviewSection
-          eyebrow="What we deliver"
-          heading="More than a beautiful website"
-          body={webDesignPage.overview}
-          cta={{ label: "Start your project", href: "/contact" }}
+
+        <ServiceProposalSection
+          paragraphs={webDesignPage.overview}
+          service="Web Design Services"
         />
+
         <FeatureGrid
-          eyebrow="Our web design capabilities"
+          eyebrow="What are web design services?"
           heading="Everything your site needs to succeed"
+          subheading="From corporate websites and eCommerce stores to landing pages and mobile-responsive designs — built to convert."
           items={webDesignPage.features}
           cols={3}
         />
+
         <InnerProcessStepper heading="How a project unfolds" steps={webDesignPage.process} />
         <StatsRow stats={webDesignPage.stats} />
         <CTABand />

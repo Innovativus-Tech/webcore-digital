@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { PageHero } from "@/components/sections/PageHero";
-import { OverviewSection } from "@/components/sections/OverviewSection";
+import { ServiceProposalSection } from "@/components/sections/ServiceProposalSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { StatsRow } from "@/components/sections/StatsRow";
 import { CTABand } from "@/components/sections/CTABand";
@@ -20,15 +20,16 @@ export default function SocialMediaMarketingPage() {
       <SiteHeader />
       <main>
         <PageHero {...socialMediaPage.hero} />
-        <OverviewSection
-          eyebrow="What we do"
-          heading="Expert social media marketing tailored to your brand"
-          body={socialMediaPage.overview}
-          cta={{ label: "Get My Free Proposal", href: "/contact" }}
+
+        <ServiceProposalSection
+          paragraphs={socialMediaPage.overview}
+          service="Social Media Marketing"
         />
+
         <FeatureGrid
           eyebrow="Benefits"
           heading="Why social media marketing matters for your business"
+          subheading="Build brand awareness, drive revenue, and connect with 4.57 billion social media users worldwide."
           items={socialMediaPage.features}
           cols={3}
         />

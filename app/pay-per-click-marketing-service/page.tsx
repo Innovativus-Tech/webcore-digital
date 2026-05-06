@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { PageHero } from "@/components/sections/PageHero";
-import { OverviewSection } from "@/components/sections/OverviewSection";
+import { ServiceProposalSection } from "@/components/sections/ServiceProposalSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { StatsRow } from "@/components/sections/StatsRow";
 import { CTABand } from "@/components/sections/CTABand";
@@ -21,11 +21,9 @@ export default function PayPerClickPage() {
       <main>
         <PageHero {...ppcPage.hero} />
 
-        <OverviewSection
-          eyebrow="About PPC"
-          heading="Immediate visibility. Full budget control. Measurable ROI."
-          body={ppcPage.overview}
-          cta={{ label: "Get My Free Proposal", href: "/contact" }}
+        <ServiceProposalSection
+          paragraphs={ppcPage.overview}
+          service="Pay Per Click Marketing"
         />
 
         {/* Challenge + What is PPC */}

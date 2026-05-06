@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { PageHero } from "@/components/sections/PageHero";
-import { OverviewSection } from "@/components/sections/OverviewSection";
+import { ServiceProposalSection } from "@/components/sections/ServiceProposalSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { StatsRow } from "@/components/sections/StatsRow";
 import { CTABand } from "@/components/sections/CTABand";
@@ -22,15 +22,17 @@ export default function DigitalMarketingPage() {
       <SiteHeader />
       <main>
         <PageHero {...digitalMarketingPage.hero} />
-        <OverviewSection
-          eyebrow="Our approach"
-          heading="Strategy before tactics"
-          body={digitalMarketingPage.overview}
-          cta={{ label: "Get your free audit", href: "/contact" }}
+
+        <ServiceProposalSection
+          paragraphs={digitalMarketingPage.overview}
+          service="Digital Marketing Services"
         />
+
+        {/* How Digital Marketing Attracts Growth */}
         <FeatureGrid
-          eyebrow="Services"
-          heading="The full channel stack"
+          eyebrow="What we offer"
+          heading="How Does Digital Marketing Attract Growth?"
+          subheading="A complete suite of digital marketing solutions tailored to your customer acquisition goals and revenue targets."
           items={digitalMarketingPage.features}
           cols={3}
         />

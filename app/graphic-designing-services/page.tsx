@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { PageHero } from "@/components/sections/PageHero";
-import { OverviewSection } from "@/components/sections/OverviewSection";
+import { ServiceProposalSection } from "@/components/sections/ServiceProposalSection";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { StatsRow } from "@/components/sections/StatsRow";
 import { CTABand } from "@/components/sections/CTABand";
@@ -23,11 +23,9 @@ export default function GraphicDesignPage() {
       <main>
         <PageHero {...graphicDesignPage.hero} />
 
-        <OverviewSection
-          eyebrow="Our expertise"
-          heading="Creative design solutions that captivate your audience"
-          body={graphicDesignPage.overview}
-          cta={{ label: "Get My Free Proposal", href: "/contact" }}
+        <ServiceProposalSection
+          paragraphs={graphicDesignPage.overview}
+          service="Graphic Designing Services"
         />
 
         {/* Why WebCore Digital */}
