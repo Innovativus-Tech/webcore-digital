@@ -15,10 +15,13 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production";
 const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION ?? "2024-01-01";
 
 /**
- * Returns true when the Sanity project ID is configured.
+ * Returns true when both the Sanity project ID and read token are configured.
  * Used by pages to decide whether to fetch from Sanity or fall back to static data.
+ * Requires the read token so that authenticated queries don't throw 401 at build time.
  */
-export const isSanityConfigured = Boolean(projectId);
+export const isSanityConfigured = Boolean(
+  projectId && process.env.SANITY_API_READ_TOKEN
+);
 
 /**
  * Primary server-side client with read token.
@@ -88,10 +91,20 @@ export async function sanityFetch<T>({
     return null;
   }
 
-  return sanityClient.fetch<T>(query, params, {
-    next: {
-      revalidate,
-      tags: tags.length > 0 ? tags : undefined,
-    },
-  });
+  try {
+    return await sanityClient.fetch<T>(query, params, {
+      next: {
+        revalidate,
+        tags: tags.length > 0 ? tags : undefined,
+      },
+    });
+  } catch (err) {
+    // Gracefully handle missing/invalid token at build time so generateStaticParams
+    // returns [] instead of crashing the entire build.
+    console.warn(
+      "[sanityFetch] fetch failed — is SANITY_API_READ_TOKEN set?",
+      err instanceof Error ? err.message : err
+    );
+    return null;
+  }
 }
