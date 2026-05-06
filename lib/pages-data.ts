@@ -394,6 +394,87 @@ export const ecommercePage = {
   ],
 };
 
+// ─── Pay Per Click Marketing ──────────────────────────────────────────────────
+
+export const ppcPage = {
+  meta: {
+    title: "Pay Per Click Marketing Service | WebcoreDigital",
+    description:
+      "Drive immediate traffic and fast ROI with WebcoreDigital's expert PPC management across Google, social media, YouTube, Amazon, and more.",
+  },
+  hero: {
+    eyebrow: "Pay Per Click Marketing Service",
+    title: "Profitable PPC Campaigns That Deliver Immediate Results",
+    subtitle:
+      "Pay-per-click advertising gives you an immediate campaign boost and a fast return on investment. Maintain full control of your paid search and acquire positive business outcomes with targeted PPC services.",
+    cta: { label: "Get My Free Proposal", href: "/contact" },
+  },
+  overview:
+    "WebcoreDigital is a digital marketing agency focused on the needs of its clients. The digital landscape keeps growing, and figuring out advertising avenues while maximising all possible conversion paths is the key motive behind every business expansion. With pay-per-click advertising, you only pay when a user clicks your ad — giving you full control over your budget and a clear line of sight from spend to revenue.",
+  challenge:
+    "Many business websites stay invisible to their target audience despite having good advertising techniques. Online companies face increased competition, changing customer demands, high digital ad expenditure, and varying market standards. PPC cuts through this noise by putting your brand directly in front of people who are actively searching for what you offer.",
+  whatIsPpc: {
+    heading: "What is Pay Per Click?",
+    body: "Pay-per-click marketing is a paid search platform used to build brand awareness, promote brand offerings, and run advertising campaigns across a brand's business ventures. With PPC, advertisers only pay each time a user clicks the ad. PPC goes beyond Google search results pages (SERPs) and the Display Network — social media sites such as YouTube, Facebook, Pinterest, and LinkedIn also use pay-per-click advertising. PPC allows marketers to place ads strategically on different online platforms to make their products and services visible to their target audience.",
+  },
+  adTypes: [
+    {
+      icon: "Search",
+      title: "Search Ads",
+      body: "The most trending form of PPC. Search ads appear to audiences already looking for your industry or brand offerings online — suitable for both short-sale and long-sale cycles to acquire high-quality leads.",
+    },
+    {
+      icon: "Monitor",
+      title: "Display Ads",
+      body: "Display advertising reaches more than 90% of online users. Ads appear on Google's partner websites, targeting people who have already visited industry-related sites, using photos and text to capture attention.",
+    },
+    {
+      icon: "MessageCircle",
+      title: "Social Ads",
+      body: "The fastest-growing sector of PPC. Social ads appear on Facebook, LinkedIn, and Twitter, programmed to reach a highly targeted audience — ideal for brands with an active social media presence.",
+    },
+    {
+      icon: "RefreshCw",
+      title: "Remarketing Ads",
+      body: "One of the best methods to reach high-converting customers. Remarketing ads remind previous visitors about your brand, bringing them back to convert — comparatively cheaper due to less competition and highly targeted segments.",
+    },
+    {
+      icon: "ShoppingCart",
+      title: "Google Shopping Ads",
+      body: "Shopping ads appear above or beside Google search results, showing your product and price before a user clicks anyone else. Ideal for eCommerce businesses targeting customers with clear buying intent.",
+    },
+    {
+      icon: "Video",
+      title: "In-stream Ads",
+      body: "Also called YouTube ads, in-stream ads appear on YouTube search results, YouTube videos, and the Display Network. Facebook in-stream ads let you place advertisements in natural breaks within video content.",
+    },
+    {
+      icon: "Mail",
+      title: "Gmail Sponsored Promotions",
+      body: "An effective way to generate direct leads by reaching interested prospects right in their inboxes. GSPs include a click-to-call feature so audiences can make direct calls and convert at any point in the sales cycle.",
+    },
+    {
+      icon: "MapPin",
+      title: "Local Services Ads",
+      body: "Local service ads follow a pay-per-lead model — you only pay for clicks that turn into leads. Applicable for HVAC companies, electricians, plumbers, locksmiths, and similar local service providers.",
+    },
+    {
+      icon: "Package",
+      title: "Amazon PPC Ads",
+      body: "Amazon PPC allows sellers to create brand awareness, boost sales, and place sponsored ads. Our PPC experts organise Amazon PPC campaigns to increase profit margins and grow your marketplace presence.",
+    },
+  ],
+  howItWorks: {
+    heading: "How Does Pay Per Click Marketing Work?",
+    body: "PPC advertising is a keyword-based marketing tactic. PPC campaign management assigns value to different search terms based on their search volume, difficulty, and competition level. The more advertisers competing for a keyword, the higher the cost. Google PPC and other PPC ads go through an ad auction — an automated process that determines the relevance and validity of advertisements. A good Quality Score boosts ad position and lowers cost per click (CPC). PPC ads must be relevant to the target demographics and include valuable keywords to receive high click-through rates (CTRs) and drive more conversions.",
+  },
+  stats: [
+    { value: "90%+", label: "of online users reached via display ads" },
+    { value: "Fast", label: "return on investment vs organic channels" },
+    { value: "9", label: "PPC ad types managed by WebcoreDigital" },
+  ],
+};
+
 // ─── Social Media Marketing ───────────────────────────────────────────────────
 
 export const socialMediaPage = {

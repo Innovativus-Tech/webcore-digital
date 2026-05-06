@@ -77,7 +77,7 @@ const siteSettingsDoc = {
           category: "Digital Marketing",
           items: [
             { _key: "mg0i0", label: "Digital Marketing Services", href: "/digital-marketing-services" },
-            { _key: "mg0i1", label: "Pay Per Click Marketing Service", href: "/digital-marketing-services" },
+            { _key: "mg0i1", label: "Pay Per Click Marketing Service", href: "/pay-per-click-marketing-service" },
             { _key: "mg0i2", label: "Search Engine Optimization (SEO) Service", href: "/search-engine-optimization-seo-service" },
             { _key: "mg0i3", label: "SEO Content Writing Services", href: "/seo-content-writing-services" },
           ],
@@ -820,6 +820,82 @@ const pages = [
         title: "Ready to grow your Chicago business?",
         subtitle: "Contact us to work with a results-driven digital marketing agency.",
         primaryCta: { label: "Talk to our Chicago team", href: "/contact" },
+        secondaryCta: { label: "Book a 30-min audit", href: "/contact" },
+        reassurance: "No obligation · Free 30-min audit · Reply within 1 business day",
+      },
+    ],
+  },
+
+  // ── Pay Per Click Marketing ───────────────────────────────────────────────
+  {
+    _id: "page-ppc",
+    _type: "page",
+    title: "Pay Per Click Marketing Service",
+    slug: { _type: "slug", current: "pay-per-click-marketing-service" },
+    pageType: "service",
+    summary:
+      "Drive immediate traffic and fast ROI with WebcoreDigital's expert PPC management across Search, Display, Social, Remarketing, Shopping, YouTube, Gmail, Local Services, and Amazon ads.",
+    seo: {
+      metaTitle: "Pay Per Click Marketing Service | WebcoreDigital",
+      metaDescription:
+        "Drive immediate traffic and fast ROI with WebcoreDigital's expert PPC management across Google, social media, YouTube, Amazon, and more.",
+    },
+    sections: [
+      {
+        _type: "pageHeroSection",
+        _key: "s-hero",
+        eyebrow: "Pay Per Click Marketing Service",
+        title: "Profitable PPC Campaigns That Deliver Immediate Results",
+        subtitle:
+          "Pay-per-click advertising gives you an immediate campaign boost and a fast return on investment. Maintain full control of your paid search and acquire positive business outcomes with targeted PPC services.",
+        primaryCta: { label: "Get My Free Proposal", href: "/contact" },
+      },
+      {
+        _type: "overviewSection",
+        _key: "s-overview",
+        eyebrow: "About PPC",
+        heading: "Immediate visibility. Full budget control. Measurable ROI.",
+        body: [
+          "WebcoreDigital is a digital marketing agency focused on the needs of its clients. The digital landscape keeps growing, and figuring out advertising avenues while maximising all possible conversion paths is the key motive behind every business expansion.",
+          "Many business websites stay invisible to their target audience despite having good advertising techniques due to increased competition, changing customer demands, and high digital ad expenditure. Pay-per-click advertising cuts through this noise by putting your brand directly in front of people actively searching for what you offer.",
+        ],
+        cta: { label: "Get My Free Proposal", href: "/contact" },
+      },
+      {
+        _type: "featureGridSection",
+        _key: "s-ad-types",
+        eyebrow: "PPC ad types",
+        heading: "9 types of PPC ads we manage for you",
+        subheading: "From search and display to YouTube, Amazon, and Gmail — we match the right ad format to your audience and goals.",
+        cols: 3,
+        items: [
+          { _key: "a0", icon: "Search", title: "Search Ads", body: "The most trending form of PPC. Appear to audiences already searching for your industry or brand offerings — suitable for both short-sale and long-sale cycles." },
+          { _key: "a1", icon: "Monitor", title: "Display Ads", body: "Reach more than 90% of online users via Google's partner websites, targeting people who have already visited industry-related sites." },
+          { _key: "a2", icon: "MessageCircle", title: "Social Ads", body: "The fastest-growing PPC sector. Ads appear on Facebook, LinkedIn, and Twitter, programmed to reach a highly targeted audience." },
+          { _key: "a3", icon: "RefreshCw", title: "Remarketing Ads", body: "Reach high-converting customers by reminding previous visitors about your brand. Comparatively cheaper due to less competition and highly targeted segments." },
+          { _key: "a4", icon: "ShoppingCart", title: "Google Shopping Ads", body: "Appear above or beside Google search results, showing your product and price before a user clicks anyone else. Ideal for eCommerce with clear buying intent." },
+          { _key: "a5", icon: "Video", title: "In-stream Ads", body: "YouTube ads appearing on YouTube search results and videos, plus Facebook in-stream ads placed in natural breaks within video content." },
+          { _key: "a6", icon: "Mail", title: "Gmail Sponsored Promotions", body: "Generate direct leads by reaching interested prospects right in their inboxes. Includes click-to-call so audiences can convert at any point in the sales cycle." },
+          { _key: "a7", icon: "MapPin", title: "Local Services Ads", body: "Pay-per-lead model for HVAC companies, electricians, plumbers, locksmiths, and local service providers — you only pay for clicks that become leads." },
+          { _key: "a8", icon: "Package", title: "Amazon PPC Ads", body: "Allow Amazon sellers to create brand awareness, boost sales, and place sponsored ads. Our experts organise campaigns to increase profit margins." },
+        ],
+      },
+      {
+        _type: "statsSection",
+        _key: "s-stats",
+        bg: "dark",
+        stats: [
+          { _key: "st0", value: "90%+", label: "of online users reached via display ads" },
+          { _key: "st1", value: "Fast", label: "return on investment vs organic channels" },
+          { _key: "st2", value: "9", label: "PPC ad types managed by WebcoreDigital" },
+        ],
+      },
+      {
+        _type: "ctaSection",
+        _key: "s-cta",
+        title: "Ready to launch profitable PPC campaigns?",
+        subtitle: "Contact us to work with a results-driven digital marketing agency.",
+        primaryCta: { label: "Get My Free Proposal", href: "/contact" },
         secondaryCta: { label: "Book a 30-min audit", href: "/contact" },
         reassurance: "No obligation · Free 30-min audit · Reply within 1 business day",
       },

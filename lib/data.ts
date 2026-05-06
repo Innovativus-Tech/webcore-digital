@@ -16,7 +16,7 @@ export const site = {
           category: "Digital Marketing",
           items: [
             { label: "Digital Marketing Services", href: "/digital-marketing-services" },
-            { label: "Pay Per Click Marketing Service", href: "/digital-marketing-services" },
+            { label: "Pay Per Click Marketing Service", href: "/pay-per-click-marketing-service" },
             { label: "Search Engine Optimization (SEO) Service", href: "/search-engine-optimization-seo-service" },
             { label: "SEO Content Writing Services", href: "/seo-content-writing-services" },
           ],
