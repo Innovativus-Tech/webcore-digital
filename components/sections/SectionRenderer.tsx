@@ -140,7 +140,6 @@ function renderSection(section: SanitySection) {
     case "partnersSection":
       return (
         <PartnerStrip
-          eyebrow={section.eyebrow}
           logos={section.logos}
         />
       );

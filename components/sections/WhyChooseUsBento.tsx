@@ -1,21 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import { whyChooseUs as staticItems } from "@/lib/data";
+import { whyChooseUs as staticItems, resultsDriven as staticResultsDriven } from "@/lib/data";
 import { Icon } from "@/components/ui/Icon";
-import { IconSquare } from "@/components/ui/IconSquare";
-import { cn } from "@/lib/cn";
-
-const sizeClasses: Record<string, string> = {
-  sm: "md:col-span-2",
-  md: "md:col-span-2",
-  lg: "md:col-span-3",
-};
 
 type WhyItem = {
   icon: string;
   title: string;
   body: string;
-  size: string;
 };
 
 type Props = {
@@ -23,44 +14,39 @@ type Props = {
   heading?: string;
   subheading?: string;
   items?: WhyItem[];
+  showIntro?: boolean;
 };
 
 export function WhyChooseUsBento(props: Props = {}) {
-  const eyebrow = props.eyebrow ?? "Why choose us";
-  const heading = props.heading ?? "Built for results and the relationships behind them.";
-  const subheading = props.subheading ?? "Six things that shape every engagement. Not slogans; how we operate.";
+  const heading = props.heading ?? staticResultsDriven.whyHeading;
   const items = props.items ?? staticItems;
+  const showIntro = props.showIntro ?? true;
 
   return (
     <section id="why" className="container-x py-20 md:py-28">
-      <div className="max-w-2xl">
-        <span className="eyebrow">{eyebrow}</span>
-        <h2 className="mt-4 text-3xl md:text-4xl lg:text-[44px] lg:leading-tight">
-          {heading}
-        </h2>
-        <p className="mt-4 text-ink-500">
-          {subheading}
-        </p>
-      </div>
+      {showIntro && (
+        <div className="mb-12 max-w-3xl">
+          <h2 className="text-2xl font-bold md:text-3xl">{heading}</h2>
+        </div>
+      )}
 
-      <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-6">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item, i) => (
           <motion.div
             key={item.title}
-            className={cn(
-              "group rounded-card border border-ink-100 bg-white p-7 transition hover:border-brand-500 hover:shadow-card",
-              sizeClasses[item.size] ?? "md:col-span-2",
-            )}
+            className="rounded-card border border-ink-100 bg-white overflow-hidden transition hover:border-brand-500 hover:shadow-card"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.45, ease: "easeOut", delay: i * 0.08 }}
+            transition={{ duration: 0.45, ease: "easeOut", delay: i * 0.06 }}
           >
-            <IconSquare>
-              <Icon name={item.icon} className="h-5 w-5" />
-            </IconSquare>
-            <h3 className="mt-5 text-lg font-semibold">{item.title}</h3>
-            <p className="mt-2 text-sm text-ink-500 leading-relaxed">{item.body}</p>
+            <div className="bg-brand-500 px-5 py-3 flex items-center gap-2">
+              <Icon name={item.icon} className="h-4 w-4 text-white shrink-0" />
+              <h3 className="text-sm font-semibold text-white">{item.title}</h3>
+            </div>
+            <div className="p-5">
+              <p className="text-sm text-ink-600 leading-relaxed">{item.body}</p>
+            </div>
           </motion.div>
         ))}
       </div>

@@ -1,12 +1,16 @@
+"use client";
+import { InfiniteTileMarquee } from "@/components/motion/InfiniteTileMarquee";
 import { partners as staticPartners } from "@/lib/data";
 
-function LogoBadge({ initials, name }: { initials: string; name: string }) {
+type Logo = { name: string; initials: string };
+
+function PartnerBadge({ name, initials }: Logo) {
   return (
     <div
       title={name}
-      className="flex h-12 min-w-[120px] items-center justify-center gap-2 rounded-lg border border-ink-100 bg-white px-5 grayscale opacity-70 transition hover:grayscale-0 hover:opacity-100 hover:border-brand-500"
+      className="flex h-20 w-48 items-center justify-center gap-3 rounded-card border border-ink-100 bg-white px-6 grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:border-brand-400 hover:shadow-card"
     >
-      <span className="grid h-7 w-7 place-items-center rounded-md bg-brand-50 text-brand-700 text-xs font-bold">
+      <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-50 text-brand-700 text-sm font-bold flex-shrink-0">
         {initials}
       </span>
       <span className="text-sm font-semibold text-ink-700">{name}</span>
@@ -14,27 +18,32 @@ function LogoBadge({ initials, name }: { initials: string; name: string }) {
   );
 }
 
-type Logo = { name: string; initials: string };
-
 type Props = {
-  eyebrow?: string;
   logos?: Logo[];
 };
 
-export function PartnerStrip(props: Props = {}) {
-  const eyebrow = props.eyebrow ?? staticPartners.eyebrow;
-  const logos = props.logos ?? staticPartners.logos;
+export function PartnerStrip({ logos }: Props = {}) {
+  const data = logos ?? staticPartners.logos;
+
+  const tiles = data.map((l) => <PartnerBadge key={l.name} {...l} />);
 
   return (
-    <section className="container-x py-16 md:py-20">
-      <div className="text-center">
-        <span className="eyebrow">{eyebrow}</span>
+    <section className="overflow-hidden bg-ink-50 border-y border-ink-100 py-16 md:py-20">
+      <div className="container-x mb-10 text-center">
+        <h2 className="text-2xl font-bold md:text-3xl">
+          OUR <span className="text-accent-600">PARTNERS</span>
+        </h2>
+        <p className="mt-2 text-sm text-ink-500">Certified and recognised by the world's leading platforms</p>
       </div>
-      <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-        {logos.map((l) => (
-          <LogoBadge key={l.name} initials={l.initials} name={l.name} />
-        ))}
-      </div>
+
+      <InfiniteTileMarquee
+        duration={20}
+        direction="left"
+        gap={16}
+        fadeColor="from-ink-50"
+      >
+        {tiles}
+      </InfiniteTileMarquee>
     </section>
   );
 }

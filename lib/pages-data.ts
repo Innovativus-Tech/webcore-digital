@@ -144,14 +144,6 @@ export const servicesPage = {
       href: "/ecommerce-marketing-agency",
       tags: ["eCommerce SEO", "PPC", "CRO"],
     },
-    {
-      icon: "MapPin",
-      title: "Chicago Digital Marketing",
-      summary:
-        "Location-specific campaigns for Chicago businesses: local SEO, HARO link building, geo-targeted PPC, and local content.",
-      href: "/chicago-digital-marketing-agency",
-      tags: ["Local SEO", "HARO", "Chicago"],
-    },
   ],
 };
 
@@ -393,8 +385,10 @@ export const chicagoPage = {
       "WebcoreDigital helps Chicago-based businesses and brands targeting the Chicago market to dominate local search, build authority, and generate qualified leads.",
     cta: { label: "Talk to our Chicago team", href: "/contact" },
   },
-  overview:
+  overview: [
     "We understand the Chicago market: its industries, its competitive landscape, and its consumers. Our location-specific campaigns combine local SEO, HARO-driven link building, and targeted content to enhance brand awareness, earn relevant backlinks, and improve search performance across every Chicago neighbourhood and suburb.",
+    "Whether you are a local business targeting neighbourhood customers or a brand seeking Chicago-wide reach, WebcoreDigital builds the digital strategy that puts you in front of the right audience at the right time.",
+  ],
   features: [
     { icon: "MapPin", title: "Chicago Local SEO", body: "GBP optimisation, location-specific content, and citation building to dominate local search results." },
     { icon: "Link", title: "HARO & Link Building", body: "Earn authoritative backlinks through journalist pitching and strategic link acquisition to boost domain authority." },
@@ -650,17 +644,13 @@ export const contactPage = {
       "Contact us to work with a results-driven digital marketing agency. No obligation, just a straight conversation about your goals.",
   },
   services: [
-    "Pay Per Click (PPC)",
-    "eCommerce Optimization",
-    "Email Marketing",
-    "Content Creation",
+    "Digital Marketing Services",
+    "Search Engine Optimization (SEO)",
+    "Pay Per Click (PPC) Marketing",
     "Social Media Marketing",
-    "Reputation Management",
-    "Amazon Marketing",
-    "App Development",
-    "Web Design",
-    "Content Writing",
-    "Search Engine Marketing",
-    "Graphic Design",
+    "SEO Content Writing",
+    "Web Design & Development",
+    "Graphic Designing",
+    "E-commerce Marketing",
   ],
 };

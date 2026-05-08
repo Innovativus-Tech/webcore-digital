@@ -1,7 +1,5 @@
 /**
  * Homepage — fetches from Sanity when configured, falls back to static components.
- *
- * The homepage slug in Sanity is "/" — the seed script stores it as slug.current = "/".
  * ISR: revalidates every 60 seconds.
  */
 
@@ -13,21 +11,18 @@ import { ChatbotFAB } from "@/components/chatbot/ChatbotFAB";
 import { isSanityConfigured } from "@/lib/sanity.client";
 import { getPageBySlug } from "@/lib/sanity.queries";
 
-// Static component imports (fallback when Sanity is not configured)
 import { Hero } from "@/components/sections/Hero";
-import { MetricsStrip } from "@/components/sections/MetricsStrip";
+import { ResultsDrivenSection } from "@/components/sections/ResultsDrivenSection";
 import { WhyChooseUsBento } from "@/components/sections/WhyChooseUsBento";
+import { MarqueeStrip } from "@/components/sections/MarqueeStrip";
 import { ProcessStepper } from "@/components/sections/ProcessStepper";
 import { CapabilityTabs } from "@/components/sections/CapabilityTabs";
-import { ServicesGrid } from "@/components/sections/ServicesGrid";
-import { MarqueeStrip } from "@/components/sections/MarqueeStrip";
 import { PartnerStrip } from "@/components/sections/PartnerStrip";
-import { TestimonialQuote } from "@/components/sections/TestimonialQuote";
+import { MetricsStrip } from "@/components/sections/MetricsStrip";
+import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { CTABand } from "@/components/sections/CTABand";
 
 export const revalidate = 60;
-
-// ── Metadata ────────────────────────────────────────────────────────────────
 
 export async function generateMetadata(): Promise<Metadata> {
   if (isSanityConfigured) {
@@ -39,19 +34,14 @@ export async function generateMetadata(): Promise<Metadata> {
       };
     }
   }
-
-  // Fallback metadata
   return {
-    title: "WebcoreDigital | Where strategy meets technology",
+    title: "WebcoreDigital | #1 Digital Marketing Agency",
     description:
-      "Results-driven digital marketing agency. SEO, paid media, content, and CRO. Built on research, measured by outcomes.",
+      "Results-driven digital marketing agency. SEO, PPC, social media, web design, content writing, and e-commerce marketing. Built on research, measured by outcomes.",
   };
 }
 
-// ── Page ─────────────────────────────────────────────────────────────────────
-
 export default async function HomePage() {
-  // Try Sanity first
   if (isSanityConfigured) {
     const page = await getPageBySlug("/");
     if (page?.sections?.length) {
@@ -68,20 +58,38 @@ export default async function HomePage() {
     }
   }
 
-  // Fallback: render static components (no Sanity data needed)
   return (
     <>
       <SiteHeader />
       <main>
+        {/* Hero */}
         <Hero />
-        <MetricsStrip />
+
+        {/* Results Driven — intro + marketing card */}
+        <ResultsDrivenSection />
+
+        {/* Why Choose WebcoreDigital — 8-card grid */}
         <WhyChooseUsBento />
-        <ProcessStepper />
-        <CapabilityTabs />
-        <ServicesGrid />
+
+        {/* Infinite scrolling service tiles marquee */}
         <MarqueeStrip />
+
+        {/* How Can We Take Your Business To The Next Level */}
+        <ProcessStepper />
+
+        {/* Outstanding Digital Experience — capability tabs */}
+        <CapabilityTabs />
+
+        {/* Our Partners — infinite scrolling logos */}
         <PartnerStrip />
-        <TestimonialQuote />
+
+        {/* Boost your conversion rate — stats */}
+        <MetricsStrip />
+
+        {/* Our Digital Marketing Services — 8-card grid */}
+        <ServicesGrid />
+
+        {/* CTA Band */}
         <CTABand />
       </main>
       <SiteFooter />

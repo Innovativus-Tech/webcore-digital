@@ -45,7 +45,7 @@ export const site = {
     { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" },
   ],
-  primaryCta: { label: "Get a free quote", href: "/contact" },
+  primaryCta: { label: "Get My Free Proposal", href: "/contact" },
 };
 
 export const hero = {
@@ -53,8 +53,14 @@ export const hero = {
   title: "Where strategy meets technology",
   subtitle:
     "Results-driven digital marketing built on research, executed with rigor, and measured by outcomes.",
-  primaryCta: { label: "Get a free audit", href: "/contact" },
+  primaryCta: { label: "Get a Free Proposal", href: "/contact" },
   secondaryCta: { label: "See our services", href: "/services" },
+};
+
+export const resultsDriven = {
+  heading: "Results Driven Digital Marketing Agency",
+  body: "WebcoreDigital is one of the leading digital marketing agencies and offers a wide range of services. We, at WebcoreDigital, have created our platform with the wide-ranging experiences that we have received in return for our services and output standards. We are highly dedicated to our work and excellent work outputs are our main targets. We highly work towards solving every problem and goal of our clients by undergoing deep research about their demands and by providing them with completely optimized solutions for their problems. Customer-centric work is our main goal and we strive to meet the exact needs of our customers. We believe in providing customer satisfaction at the end of our work and our solutions and strategies are customized based on every need of our customers.",
+  whyHeading: "Why choose WebcoreDigital for your Digital Marketing Agency?",
 };
 
 export const metrics = [
@@ -66,139 +72,191 @@ export const metrics = [
 export const whyChooseUs = [
   {
     id: "clientele",
-    title: "Diverse clientele",
-    body: "From startups to enterprise, we adapt our playbooks to your market, not the other way around.",
+    title: "Diverse Clientele",
+    body: "WebcoreDigital, one of the leading digital marketing companies, has worked with clients belonging to all industries, be it local businesses or large brands. We provide customer satisfaction and we have happy customers.",
     icon: "Users",
     size: "md",
   },
   {
     id: "expertise",
-    title: "Deep expertise",
-    body: "Years of hands-on experience across SEO, paid media, content, and analytics.",
+    title: "Our Knowledge",
+    body: "The strategies that we use are proven to work for the varying needs of the clients. This has been possible due to our experience in the fields and services that we offer. Our professionals are highly experienced.",
     icon: "Sparkles",
-    size: "lg",
+    size: "md",
   },
   {
     id: "packages",
-    title: "Flexible packages",
-    body: "Pay for what you need. Scale up or down as your goals evolve.",
+    title: "Flexible Packages",
+    body: "WebcoreDigital offers digital marketing packages that meet prices of all levels and suit the varying needs of consumers. Our professionals help in deciding which package is appropriate to suit your needs.",
     icon: "Layers",
-    size: "sm",
+    size: "md",
   },
   {
     id: "process",
-    title: "Research-driven process",
-    body: "Every recommendation is backed by data: audience, competitor, and channel research come first.",
+    title: "Effective Process",
+    body: "We use a holistic approach in deciding and determining, based on research, what exactly the business needs and what marketing campaigns and strategies should be applied to meet the consumer's interests.",
     icon: "Search",
     size: "md",
   },
   {
     id: "ethics",
-    title: "Honesty & ethics",
-    body: "Transparent reporting, clear pricing, no vanity metrics. We tell you what's working and what isn't.",
+    title: "Honesty and Ethics Involved",
+    body: "Our team members believe in honesty and integrity and we respect our clients and try to fulfill all responsibilities to provide customer satisfaction. We identify your requirements and craft a customized solution.",
     icon: "ShieldCheck",
-    size: "sm",
+    size: "md",
+  },
+  {
+    id: "results",
+    title: "Proven Results",
+    body: "WebcoreDigital takes an effort in hearing the problems and requirements of the clients and their business goals, then builds a customized service package. With our campaigns, we have experienced huge growth in revenue and traffic.",
+    icon: "TrendingUp",
+    size: "md",
   },
   {
     id: "customer",
-    title: "Customer-first priority",
-    body: "Your goals drive the roadmap. We treat your business as if it were our own.",
+    title: "Priority to Customers",
+    body: "Our consumer-centric goal makes it very important for us to give our full focus to the needs of our clients. The results are satisfied clients who feel confident about trusting us and we get better results.",
     icon: "Heart",
     size: "md",
   },
-] as const;
+  {
+    id: "track",
+    title: "Excellence Track Record",
+    body: "Using dashboards, bids, ads, metadata, and analytics we keep track of your performance in the digital world. We find ways to improve your position in the digital world with advanced technology.",
+    icon: "BarChart3",
+    size: "md",
+  },
+];
 
 export const process = {
   eyebrow: "Our approach",
-  title: "How we take your business to the next level",
+  title: "How Can We Take Your Business To The Next Level?",
   subtitle:
-    "Customized digital marketing solutions built on research, designed to generate qualified leads, grow visibility, sharpen your brand, and lift revenue.",
+    "WebcoreDigital provides a completely customized solution to your problems based on the research that is done regarding the various aspects of your problems. This will help in providing extremely effective and customer-centric solutions that will help you to strive for higher goals of having quality leads, increased traffic rates, and individual platform for your brand.",
   steps: [
     {
       number: 1,
-      title: "Research",
-      description: "Audience, competitor, and channel deep-dive to find your real growth levers.",
-      outcome: "Clear opportunity map",
+      title: "More Amount of Leads",
+      description: "WebcoreDigital offers customer-centric packages that help in digital marketing by generating more qualified leads. With the customized services, stress is generated in every aspect of the work.",
+      outcome: "More qualified leads",
     },
     {
       number: 2,
-      title: "Strategy",
-      description: "A focused plan tied to business goals, not a checklist of tactics.",
-      outcome: "Qualified-lead playbook",
+      title: "More Visibility & Traffic",
+      description: "We help your brand gain more visibility across search engines and social platforms, driving boosted traffic to your website and increasing your overall online presence.",
+      outcome: "Boosted traffic",
     },
     {
       number: 3,
-      title: "Execute",
-      description: "Hands-on delivery across SEO, paid, content, and conversion experiences.",
-      outcome: "Traffic, visibility & branding",
+      title: "Branding & Reputation",
+      description: "We build your brand identity and reputation, creating an individual platform where your brand can display its unique reach and increase recognition in the digital landscape.",
+      outcome: "Stronger branding",
     },
     {
       number: 4,
-      title: "Measure",
-      description: "Continuous analytics, honest reporting, and iterative optimization.",
-      outcome: "Sales & customer satisfaction",
+      title: "Increase in Sales",
+      description: "With better rankings, increased traffic, and improved reputation, you get better results that increase our overall rank and prove our services to be excellent — directly boosting your sales.",
+      outcome: "Revenue growth",
     },
   ],
 };
 
 export const capabilities = {
-  title: "An outstanding digital experience",
+  title: "Outstanding Digital Experience",
   subtitle:
-    "Capabilities that turn attention into action, engineered around your customer's journey.",
+    "A successful digital marketing campaign needs rich media and content. We give your digital campaign the boost it needs by creating and advertising engaging content that will catch the attention of your users.",
   tabs: [
-    {
-      id: "rich-media",
-      label: "Rich Media",
-      description:
-        "Engaging creative: video, motion, and interactive assets that get your message across in seconds.",
-      bullets: ["Video & motion production", "Interactive landing experiences", "On-brand creative systems"],
-    },
     {
       id: "online-marketing",
       label: "Online Marketing",
       description:
-        "Multi-channel campaigns that work together: search, social, display, and email pulling in one direction.",
-      bullets: ["Search & paid media", "Social & influencer", "Lifecycle email"],
+        "Multi-channel campaigns that work together: search, social, display, and email pulling in one direction to reach your audience wherever they are.",
+      bullets: ["Search & paid media", "Social & influencer marketing", "Lifecycle email campaigns"],
     },
     {
       id: "analytics",
-      label: "Analytics",
+      label: "High-End Analyzing",
       description:
-        "Measurement you can trust. Clean tracking, honest dashboards, and decisions backed by data.",
-      bullets: ["GA4 & server-side tracking", "Custom dashboards", "Attribution modeling"],
+        "Measurement you can trust. Clean tracking, honest dashboards, and decisions backed by data — using the latest analytics tools to find your growth levers.",
+      bullets: ["GA4 & server-side tracking", "Custom performance dashboards", "Attribution modeling"],
     },
     {
       id: "keywords",
-      label: "Keyword Discovery",
+      label: "Keyword Discovery and Selection",
       description:
-        "Find the queries that actually drive revenue, not just traffic, and own them on the SERP.",
-      bullets: ["Intent-mapped research", "Competitor gap analysis", "Topical authority planning"],
+        "Find the queries that actually drive revenue, not just traffic, and own them on the SERP through thorough keyword research and competitor gap analysis.",
+      bullets: ["Intent-mapped keyword research", "Competitor gap analysis", "Topical authority planning"],
     },
     {
       id: "cro",
       label: "Conversion Rate Optimization",
       description:
-        "Turn more of your existing visitors into customers with structured experimentation.",
+        "Turn more of your existing visitors into customers with structured experimentation, UX improvements, and landing page optimization.",
       bullets: ["UX & funnel audits", "A/B testing roadmap", "Landing page optimization"],
     },
   ],
 };
 
 export const services = {
-  title: "Our digital marketing services",
-  subtitle: "A full stack of capabilities. Pick a package or compose your own.",
+  title: "Our Digital Marketing Services",
+  subtitle: "WebcoreDigital is a digital marketing company that offers a wide range of services to our customers.",
   items: [
-    { id: "seo", icon: "Search", title: "Search Engine Optimization", summary: "Rank for the queries that matter and grow durable organic traffic.", href: "/search-engine-optimization-seo-service" },
-    { id: "ppc", icon: "Target", title: "Pay-Per-Click", summary: "Profitable paid campaigns across Google, Bing, and social networks.", href: "/digital-marketing-services" },
-    { id: "social", icon: "MessageCircle", title: "Social Media Marketing", summary: "Build audience and demand on the platforms your customers actually use.", href: "/social-media-marketing-service" },
-    { id: "content", icon: "PenLine", title: "SEO Content Writing", summary: "Research-driven, plagiarism-free content that ranks and converts.", href: "/seo-content-writing-services" },
-    { id: "email", icon: "Mail", title: "Email Marketing", summary: "Personalised campaigns that convert prospects and recover abandoned carts.", href: "/digital-marketing-services" },
-    { id: "web", icon: "MonitorSmartphone", title: "Web Design & Development", summary: "Fast, conversion-focused websites engineered to generate leads.", href: "/web-design-services" },
-    { id: "graphic", icon: "Palette", title: "Graphic Designing", summary: "Logos, creatives, and brand systems that make every asset work harder.", href: "/graphic-designing-services" },
-    { id: "ecommerce", icon: "ShoppingCart", title: "E-commerce Marketing", summary: "Multi-channel strategies to grow your online store's revenue.", href: "/ecommerce-marketing-agency" },
-    { id: "orm", icon: "ShieldCheck", title: "Online Reputation Management", summary: "Monitor, improve, and protect your brand's online reputation.", href: "/digital-marketing-services" },
-    { id: "video", icon: "Video", title: "Video Production", summary: "Full-service video marketing from script to motion graphics.", href: "/digital-marketing-services" },
-    { id: "cro", icon: "TrendingUp", title: "Conversion Rate Optimization", summary: "Turn more visitors into customers through structured experimentation.", href: "/digital-marketing-services" },
+    {
+      id: "digital",
+      icon: "BarChart3",
+      title: "Digital Marketing",
+      summary: "Integrated digital marketing strategies across SEO, PPC, email, social, content, ORM, video, and CRO — all tailored to your customer acquisition goals.",
+      href: "/digital-marketing-services",
+    },
+    {
+      id: "seo",
+      icon: "Search",
+      title: "Search Engine Optimization",
+      summary: "Comprehensive SEO services: technical SEO, local SEO, on-page and off-page optimisation, link building, Amazon SEO, Shopify SEO, and franchise SEO.",
+      href: "/search-engine-optimization-seo-service",
+    },
+    {
+      id: "ppc",
+      icon: "Target",
+      title: "Pay Per Click Marketing",
+      summary: "Profitable PPC campaigns across Search, Display, Social, Remarketing, Google Shopping, YouTube, Gmail, Local Services, and Amazon Ads.",
+      href: "/pay-per-click-marketing-service",
+    },
+    {
+      id: "social",
+      icon: "MessageCircle",
+      title: "Social Media Marketing",
+      summary: "Build brand awareness and drive revenue across Facebook, Instagram, Twitter, LinkedIn, YouTube, Pinterest, and Snapchat with data-driven social strategies.",
+      href: "/social-media-marketing-service",
+    },
+    {
+      id: "content",
+      icon: "PenLine",
+      title: "SEO Content Writing",
+      summary: "Research-driven, plagiarism-free content that ranks well in search engines, educates your audience, and converts visitors into customers.",
+      href: "/seo-content-writing-services",
+    },
+    {
+      id: "web",
+      icon: "MonitorSmartphone",
+      title: "Web Design & Development",
+      summary: "Custom corporate, eCommerce, and mobile-responsive websites built to convert visitors into customers, with SEO-friendly architecture from the ground up.",
+      href: "/web-design-services",
+    },
+    {
+      id: "graphic",
+      icon: "Palette",
+      title: "Graphic Designing",
+      summary: "Logos, branding, social media graphics, motion graphics, marketing materials, and presentations — 100% custom designs tailored to your brand identity.",
+      href: "/graphic-designing-services",
+    },
+    {
+      id: "ecommerce",
+      icon: "ShoppingCart",
+      title: "E-commerce Marketing",
+      summary: "Multi-channel e-commerce marketing — SEO, PPC, email, content, CRO, and link building to grow your online store's revenue and customer base.",
+      href: "/ecommerce-marketing-agency",
+    },
   ],
 };
 
@@ -252,7 +310,7 @@ export const footer = {
         { label: "SEO Content Writing", href: "/seo-content-writing-services" },
         { label: "E-commerce Marketing", href: "/ecommerce-marketing-agency" },
         { label: "Social Media Marketing", href: "/social-media-marketing-service" },
-        { label: "Chicago Agency", href: "/chicago-digital-marketing-agency" },
+        { label: "Pay Per Click (PPC)", href: "/pay-per-click-marketing-service" },
       ],
     },
     {
