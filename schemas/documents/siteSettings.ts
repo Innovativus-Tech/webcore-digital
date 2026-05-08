@@ -64,7 +64,7 @@ export const siteSettingsDocument = defineType({
       title: "Primary CTA label",
       type: "string",
       group: "identity",
-      initialValue: "Get a free quote",
+      initialValue: "Get My Free Proposal",
     }),
     defineField({
       name: "primaryCtaHref",

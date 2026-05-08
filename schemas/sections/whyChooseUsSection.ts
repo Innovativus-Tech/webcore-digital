@@ -1,12 +1,13 @@
 import { defineField, defineType } from "sanity";
 
 /**
- * whyChooseUsSection — bento-grid of 6 value propositions.
+ * whyChooseUsSection — flat 4-column grid of up to 8 reason cards.
+ * Each card has a coloured header strip with icon + title, and a body paragraph.
  * Maps to components/sections/WhyChooseUsBento.tsx
  */
 export const whyChooseUsSection = defineType({
   name: "whyChooseUsSection",
-  title: "Why choose us (bento)",
+  title: "Why choose us (4-col grid)",
   type: "object",
   fields: [
     defineField({
@@ -30,8 +31,9 @@ export const whyChooseUsSection = defineType({
     defineField({
       name: "items",
       title: "Reason cards",
+      description: "Up to 8 cards. Displayed in a responsive 1 → 2 → 4 column grid.",
       type: "array",
-      validation: (r) => r.required().min(1),
+      validation: (r) => r.required().min(1).max(8),
       of: [
         {
           type: "object",
@@ -57,24 +59,9 @@ export const whyChooseUsSection = defineType({
               rows: 2,
               validation: (r) => r.required(),
             }),
-            defineField({
-              name: "size",
-              title: "Card size",
-              type: "string",
-              options: {
-                list: [
-                  { title: "Small (2 cols)", value: "sm" },
-                  { title: "Medium (2 cols)", value: "md" },
-                  { title: "Large (3 cols)", value: "lg" },
-                ],
-                layout: "radio",
-              },
-              initialValue: "md",
-              validation: (r) => r.required(),
-            }),
           ],
           preview: {
-            select: { title: "title", subtitle: "size" },
+            select: { title: "title", subtitle: "icon" },
           },
         },
       ],

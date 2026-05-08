@@ -54,7 +54,6 @@ export const pageDocument = defineType({
         list: [
           { title: "Home", value: "home" },
           { title: "Service", value: "service" },
-          { title: "Location", value: "location" },
           { title: "About", value: "about" },
           { title: "Careers", value: "careers" },
           { title: "Contact", value: "contact" },
@@ -84,6 +83,8 @@ export const pageDocument = defineType({
       of: [
         { type: "heroSection" },
         { type: "pageHeroSection" },
+        { type: "resultsDrivenSection" },
+        { type: "serviceProposalSection" },
         { type: "metricsSection" },
         { type: "whyChooseUsSection" },
         { type: "processSection" },
@@ -120,7 +121,6 @@ export const pageDocument = defineType({
       const icons: Record<string, string> = {
         home: "🏠",
         service: "⚙️",
-        location: "📍",
         about: "👥",
         careers: "💼",
         contact: "✉️",

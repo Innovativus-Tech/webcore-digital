@@ -1,7 +1,8 @@
 import { defineField, defineType } from "sanity";
 
 /**
- * partnersSection — scrolling logo strip.
+ * partnersSection — infinite-scroll logo marquee.
+ * The heading "OUR PARTNERS" is hard-coded in the component.
  * Maps to components/sections/PartnerStrip.tsx
  */
 export const partnersSection = defineType({
@@ -9,12 +10,6 @@ export const partnersSection = defineType({
   title: "Partners / logo strip",
   type: "object",
   fields: [
-    defineField({
-      name: "eyebrow",
-      title: "Eyebrow label",
-      type: "string",
-      initialValue: "Trusted by teams at",
-    }),
     defineField({
       name: "logos",
       title: "Partner logos",

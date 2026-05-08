@@ -88,7 +88,6 @@ export interface SanityWhyItem {
   icon: string;
   title: string;
   body: string;
-  size: "sm" | "md" | "lg";
 }
 
 export interface SanityWhyChooseUsSection {
@@ -232,7 +231,6 @@ export interface SanityPartnerLogo {
 export interface SanityPartnersSection {
   _type: "partnersSection";
   _key: string;
-  eyebrow?: string;
   logos: SanityPartnerLogo[];
 }
 
@@ -264,11 +262,28 @@ export interface SanityRichTextSection {
   content: SanityPortableText;
 }
 
+export interface SanityResultsDrivenSection {
+  _type: "resultsDrivenSection";
+  _key: string;
+  heading?: string;
+  body?: string;
+}
+
+export interface SanityServiceProposalSection {
+  _type: "serviceProposalSection";
+  _key: string;
+  heading?: string;
+  paragraphs: string[];
+  service: string;
+}
+
 // ── Union of all section types ────────────────────────────────────────────────
 
 export type SanitySection =
   | SanityHeroSection
   | SanityPageHeroSection
+  | SanityResultsDrivenSection
+  | SanityServiceProposalSection
   | SanityMetricsSection
   | SanityWhyChooseUsSection
   | SanityProcessSection

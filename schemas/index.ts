@@ -5,6 +5,8 @@ import { seoFields } from "./objects/seoFields";
 // ── Section blocks ─────────────────────────────────────────────────────────────
 import { heroSection } from "./sections/heroSection";
 import { pageHeroSection } from "./sections/pageHeroSection";
+import { resultsDrivenSection } from "./sections/resultsDrivenSection";
+import { serviceProposalSection } from "./sections/serviceProposalSection";
 import { metricsSection } from "./sections/metricsSection";
 import { whyChooseUsSection } from "./sections/whyChooseUsSection";
 import { processSection } from "./sections/processSection";
@@ -37,6 +39,8 @@ export const schemaTypes = [
   // Section blocks (registered so they can be used in page.sections array)
   heroSection,
   pageHeroSection,
+  resultsDrivenSection,
+  serviceProposalSection,
   metricsSection,
   whyChooseUsSection,
   processSection,

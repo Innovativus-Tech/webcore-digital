@@ -137,8 +137,8 @@ const siteSettingsDoc = {
       links: [
         { _key: "fc2l0", label: "SEO Content Writing", href: "/seo-content-writing-services" },
         { _key: "fc2l1", label: "E-commerce Marketing", href: "/ecommerce-marketing-agency" },
-        { _key: "fc2l2", label: "Chicago Agency", href: "/chicago-digital-marketing-agency" },
-        { _key: "fc2l3", label: "All Services", href: "/services" },
+        { _key: "fc2l2", label: "Social Media Marketing", href: "/social-media-marketing-service" },
+        { _key: "fc2l3", label: "Pay Per Click (PPC)", href: "/pay-per-click-marketing-service" },
       ],
     },
     {
@@ -204,15 +204,16 @@ const pages = [
         _type: "whyChooseUsSection",
         _key: "s-why",
         eyebrow: "Why choose us",
-        heading: "Built for results and the relationships behind them.",
-        subheading: "Six things that shape every engagement. Not slogans; how we operate.",
+        heading: "Why choose WebcoreDigital for your Digital Marketing Agency?",
         items: [
-          { _key: "w0", icon: "Users", title: "Diverse clientele", body: "From startups to enterprise, we adapt our playbooks to your market, not the other way around.", size: "md" },
-          { _key: "w1", icon: "Sparkles", title: "Deep expertise", body: "Years of hands-on experience across SEO, paid media, content, and analytics.", size: "lg" },
-          { _key: "w2", icon: "Layers", title: "Flexible packages", body: "Pay for what you need. Scale up or down as your goals evolve.", size: "sm" },
-          { _key: "w3", icon: "Search", title: "Research-driven process", body: "Every recommendation is backed by data: audience, competitor, and channel research come first.", size: "md" },
-          { _key: "w4", icon: "ShieldCheck", title: "Honesty & ethics", body: "Transparent reporting, clear pricing, no vanity metrics. We tell you what's working and what isn't.", size: "sm" },
-          { _key: "w5", icon: "Heart", title: "Customer-first priority", body: "Your goals drive the roadmap. We treat your business as if it were our own.", size: "md" },
+          { _key: "w0", icon: "Users", title: "Diverse Clientele", body: "WebcoreDigital has worked with clients belonging to all industries, be it local businesses or large brands. We provide customer satisfaction and we have happy customers." },
+          { _key: "w1", icon: "Sparkles", title: "Our Knowledge", body: "The strategies that we use are proven to work for the varying needs of the clients. This has been possible due to our experience in the fields and services that we offer. Our professionals are highly experienced." },
+          { _key: "w2", icon: "Layers", title: "Flexible Packages", body: "WebcoreDigital offers digital marketing packages that meet prices of all levels and suit the varying needs of consumers. Our professionals help in deciding which package is appropriate to suit your needs." },
+          { _key: "w3", icon: "Search", title: "Effective Process", body: "We use a holistic approach in deciding and determining, based on research, what exactly the business needs and what marketing campaigns and strategies should be applied to meet the consumer's interests." },
+          { _key: "w4", icon: "ShieldCheck", title: "Honesty and Ethics Involved", body: "Our team members believe in honesty and integrity and we respect our clients and try to fulfill all responsibilities to provide customer satisfaction. We identify your requirements and craft a customized solution." },
+          { _key: "w5", icon: "TrendingUp", title: "Proven Results", body: "WebcoreDigital takes an effort in hearing the problems and requirements of the clients and their business goals, then builds a customized service package. With our campaigns, we have experienced huge growth in revenue and traffic." },
+          { _key: "w6", icon: "Heart", title: "Priority to Customers", body: "Our consumer-centric goal makes it very important for us to give our full focus to the needs of our clients. The results are satisfied clients who feel confident about trusting us and we get better results." },
+          { _key: "w7", icon: "BarChart3", title: "Excellence Track Record", body: "Using dashboards, bids, ads, metadata, and analytics we keep track of your performance in the digital world. We find ways to improve your position in the digital world with advanced technology." },
         ],
       },
       {
@@ -249,7 +250,6 @@ const pages = [
       {
         _type: "partnersSection",
         _key: "s-partners",
-        eyebrow: "Certified partners",
         logos: [
           { _key: "lg0", name: "Shopify", initials: "SF" },
           { _key: "lg1", name: "Google", initials: "GG" },
@@ -362,7 +362,7 @@ const pages = [
     slug: { _type: "slug", current: "services" },
     pageType: "servicesHub",
     summary:
-      "Full range of digital marketing services from WebcoreDigital: SEO, web design, content writing, graphic design, e-commerce marketing, and Chicago local marketing.",
+      "Full range of digital marketing services from WebcoreDigital: SEO, web design, content writing, graphic design, social media marketing, and e-commerce marketing.",
     seo: {
       metaTitle: "Services | WebcoreDigital",
       metaDescription:
@@ -386,12 +386,14 @@ const pages = [
         subheading:
           "Be a leader in your industry with a dynamic digital marketing platform. Pick a service category below to learn more.",
         categories: [
-          { _key: "c0", icon: "Search", title: "Digital Marketing", summary: "Integrated strategies across SEO, PPC, email, and social, built around your customer acquisition goals.", href: "/digital-marketing-services", tags: ["SEO", "PPC", "Email", "Social"] },
-          { _key: "c1", icon: "MonitorSmartphone", title: "Web Design & Development", summary: "Professional, conversion-focused websites that elevate your online presence and turn visitors into customers.", href: "/web-design-services", tags: ["UI/UX Design", "CRO", "Dev"] },
-          { _key: "c2", icon: "PenLine", title: "SEO Content Writing", summary: "Research-driven, plagiarism-free content that ranks, educates, and supports your brand messaging.", href: "/seo-content-writing-services", tags: ["Blog", "Landing Pages", "Copywriting"] },
-          { _key: "c3", icon: "BarChart3", title: "Search Engine Optimisation", summary: "Technical SEO, on-page optimisation, and link building, including multi-location and franchise SEO.", href: "/search-engine-optimization-seo-service", tags: ["Technical SEO", "Local SEO", "Link Building"] },
-          { _key: "c4", icon: "Palette", title: "Graphic Design", summary: "Creative, intuitive design work that elevates your brand identity and supports every marketing channel.", href: "/graphic-designing-services", tags: ["Branding", "Creatives", "Logos"] },
-          { _key: "c5", icon: "ShoppingCart", title: "E-commerce Marketing", summary: "Location-specific campaigns built for Chicago businesses: HARO, local SEO, and targeted brand awareness.", href: "/ecommerce-marketing-agency", tags: ["PPC", "Email", "CRO", "SEO"] },
+          { _key: "c0", icon: "BarChart3", title: "Digital Marketing", summary: "Integrated digital marketing strategies across SEO, PPC, email, social, content, and CRO — all tailored to your customer acquisition goals.", href: "/digital-marketing-services", tags: ["SEO", "PPC", "Email", "Social"] },
+          { _key: "c1", icon: "Search", title: "Search Engine Optimisation", summary: "Comprehensive SEO services: technical SEO, local SEO, on-page and off-page optimisation, link building, Amazon SEO, Shopify SEO, and franchise SEO.", href: "/search-engine-optimization-seo-service", tags: ["Technical SEO", "Local SEO", "Link Building"] },
+          { _key: "c2", icon: "Target", title: "Pay Per Click Marketing", summary: "Profitable PPC campaigns across Search, Display, Social, Remarketing, Google Shopping, YouTube, Gmail, Local Services, and Amazon Ads.", href: "/pay-per-click-marketing-service", tags: ["Google Ads", "Shopping", "Remarketing"] },
+          { _key: "c3", icon: "MessageCircle", title: "Social Media Marketing", summary: "Build brand awareness and drive revenue across Facebook, Instagram, Twitter, LinkedIn, YouTube, Pinterest, and Snapchat with data-driven social strategies.", href: "/social-media-marketing-service", tags: ["Facebook", "Instagram", "LinkedIn"] },
+          { _key: "c4", icon: "PenLine", title: "SEO Content Writing", summary: "Research-driven, plagiarism-free content that ranks well in search engines, educates your audience, and converts visitors into customers.", href: "/seo-content-writing-services", tags: ["Blog", "Landing Pages", "Copywriting"] },
+          { _key: "c5", icon: "MonitorSmartphone", title: "Web Design & Development", summary: "Custom corporate, eCommerce, and mobile-responsive websites built to convert visitors into customers, with SEO-friendly architecture from the ground up.", href: "/web-design-services", tags: ["UI/UX Design", "CRO", "Dev"] },
+          { _key: "c6", icon: "Palette", title: "Graphic Designing", summary: "Logos, branding, social media graphics, motion graphics, marketing materials, and presentations — 100% custom designs tailored to your brand identity.", href: "/graphic-designing-services", tags: ["Branding", "Logos", "Motion"] },
+          { _key: "c7", icon: "ShoppingCart", title: "E-commerce Marketing", summary: "Multi-channel e-commerce marketing — SEO, PPC, email, content, CRO, and link building to grow your online store's revenue and customer base.", href: "/ecommerce-marketing-agency", tags: ["PPC", "Email", "CRO", "SEO"] },
         ],
       },
       {
@@ -759,67 +761,6 @@ const pages = [
         title: "Ready to take your business to the next level?",
         subtitle: "Contact us to work with a results-driven digital marketing agency.",
         primaryCta: { label: "Start a design project", href: "/contact" },
-        secondaryCta: { label: "Book a 30-min audit", href: "/contact" },
-        reassurance: "No obligation · Free 30-min audit · Reply within 1 business day",
-      },
-    ],
-  },
-
-  // ── Chicago ───────────────────────────────────────────────────────────────
-  {
-    _id: "page-chicago",
-    _type: "page",
-    title: "Chicago Digital Marketing Agency",
-    slug: { _type: "slug", current: "chicago-digital-marketing-agency" },
-    pageType: "location",
-    summary:
-      "WebcoreDigital serves Chicago-based businesses with local SEO, HARO link building, geo-targeted PPC, and Chicago-specific content marketing.",
-    seo: {
-      metaTitle: "Chicago Digital Marketing Agency | WebcoreDigital",
-      metaDescription:
-        "WebcoreDigital is a results-driven digital marketing agency serving Chicago businesses: local SEO, HARO, link building, and more.",
-    },
-    sections: [
-      {
-        _type: "pageHeroSection",
-        _key: "s-hero",
-        eyebrow: "Chicago Digital Marketing Agency",
-        title: "Grow your Chicago business with data-driven marketing",
-        subtitle:
-          "WebcoreDigital helps Chicago-based businesses and brands targeting the Chicago market to dominate local search, build authority, and generate qualified leads.",
-        primaryCta: { label: "Talk to our Chicago team", href: "/contact" },
-      },
-      {
-        _type: "featureGridSection",
-        _key: "s-features",
-        eyebrow: "Services",
-        heading: "Chicago-specific marketing services",
-        cols: 3,
-        items: [
-          { _key: "f0", icon: "MapPin", title: "Chicago Local SEO", body: "GBP optimisation, location-specific content, and citation building to dominate local search results." },
-          { _key: "f1", icon: "Link", title: "HARO & Link Building", body: "Earn authoritative backlinks through journalist pitching and strategic link acquisition to boost domain authority." },
-          { _key: "f2", icon: "Newspaper", title: "Local Content Marketing", body: "Chicago-relevant content that resonates with your local audience and ranks for neighbourhood-level queries." },
-          { _key: "f3", icon: "Target", title: "Geo-Targeted PPC", body: "Paid campaigns precisely targeted to Chicago zip codes, neighbourhoods, and surrounding suburbs." },
-          { _key: "f4", icon: "Users", title: "Social Media for Chicago", body: "Community-focused social strategies that build local brand awareness and customer loyalty." },
-          { _key: "f5", icon: "BarChart3", title: "Local Analytics", body: "Tracking and reporting focused on Chicago-market KPIs: local pack rankings, calls, and directions." },
-        ],
-      },
-      {
-        _type: "statsSection",
-        _key: "s-stats",
-        bg: "light",
-        stats: [
-          { _key: "st0", value: "Local", label: "Chicago market expertise" },
-          { _key: "st1", value: "6×", label: "average traffic growth for local clients" },
-          { _key: "st2", value: "Top 3", label: "local pack target for primary keywords" },
-        ],
-      },
-      {
-        _type: "ctaSection",
-        _key: "s-cta",
-        title: "Ready to grow your Chicago business?",
-        subtitle: "Contact us to work with a results-driven digital marketing agency.",
-        primaryCta: { label: "Talk to our Chicago team", href: "/contact" },
         secondaryCta: { label: "Book a 30-min audit", href: "/contact" },
         reassurance: "No obligation · Free 30-min audit · Reply within 1 business day",
       },

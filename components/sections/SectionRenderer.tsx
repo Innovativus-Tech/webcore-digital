@@ -12,6 +12,8 @@ import type { SanitySection } from "@/lib/sanity.types";
 
 import { Hero } from "./Hero";
 import { PageHero } from "./PageHero";
+import { ResultsDrivenSection } from "./ResultsDrivenSection";
+import { ServiceProposalSection } from "./ServiceProposalSection";
 import { MetricsStrip } from "./MetricsStrip";
 import { WhyChooseUsBento } from "./WhyChooseUsBento";
 import { ProcessStepper } from "./ProcessStepper";
@@ -49,6 +51,23 @@ function renderSection(section: SanitySection) {
           cta={section.primaryCta}
           secondaryCta={section.secondaryCta}
           centered={section.centered}
+        />
+      );
+
+    case "resultsDrivenSection":
+      return (
+        <ResultsDrivenSection
+          heading={section.heading}
+          body={section.body}
+        />
+      );
+
+    case "serviceProposalSection":
+      return (
+        <ServiceProposalSection
+          heading={section.heading}
+          paragraphs={section.paragraphs}
+          service={section.service}
         />
       );
 
